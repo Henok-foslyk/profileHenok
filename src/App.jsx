@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Outlet } from 'react-router-dom'
+import Navbar from './layouts/Navbar'
+import Footer from './layouts/Footer'
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <h1>Hi Henok, keep going!</h1>
-    </>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-1 px-4 sm:px-8 py-6 max-w-6xl mx-auto">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   )
 }
-
-export default App
