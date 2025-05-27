@@ -1,3 +1,5 @@
+import ProjectCard from '../layouts/ProjectCard'
+import flaskLogo from "../assets/images/flask.png"
 const Projects = () => {
   return (
     <section className="p-8">
@@ -9,6 +11,15 @@ const Projects = () => {
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Project Card Example */}
+        <ProjectCard
+          title="ArtScript"
+          description="A Domain Specific Programming Language designed to produce SVG drawings. Created to help teach children programming concepts through fun, visual projects like drawing a bunny."
+          image={flaskLogo} // replace with actual image URL or local import
+          techStack={['JavaScript', 'SVG', 'Domain-Specific Language']}
+          liveDemoLink="https://your-rtScript-demo-link.com" // replace with actual URL if available
+          repoLink="https://github.com/yourusername/rtScript" // replace with actual repo URL
+        />
         {/* Project 1: News Copilot */}
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h3 className="text-2xl font-semibold mb-2">News Copilot</h3>

@@ -11,7 +11,7 @@ import OnCampus from './pages/OnCampus'
 import Contact from './pages/Contact'
 import ErrorPage from './pages/ErrorPage'
 
-import './index.css'
+//import './index.css'
 
 const router = createBrowserRouter([
   {

@@ -1,3 +1,9 @@
+import React from 'react';
+import ExperienceCard from '../layouts/ExperienceCard';
+import flaskLogo from '../assets/images/flask.png'
+
+
+
 const Experiences = () => {
   return (
     <section className="p-8">
@@ -6,6 +12,20 @@ const Experiences = () => {
       <p className="text-gray-700 mb-6">
         Below are some of my professional experiences, including internships, research roles, and fellowships.
       </p>
+
+      {/* Experience 1: Software Engineering Intern at Klear */}
+      <ExperienceCard 
+        title="Software Engineering Intern"
+        company="Klear"
+        logo={flaskLogo}
+        duration="June 2023 - August 2023"
+        place="New York, New York (Remote)"
+        responsibilities={[
+          "Developed machine learning algorithms to personalize content recommendations.",
+          "Collaborated with cross-functional teams to improve product features.",
+          "Contributed to codebase improvements and bug fixes using Python and TensorFlow."
+        ]}
+      />
 
       {/* Experience 1: Software Engineering Intern at Klear */}
       <div className="bg-white shadow-lg rounded-lg p-6 mb-6">
