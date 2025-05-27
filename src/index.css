@@ -1,15 +1,19 @@
-/* Light mode (default) */
 :root {
-  --bg-color: #ffffff;
-  --text-color: #111111;
-  --accent-color: #ff7f11;
+  --bg-color: #24272e; 
+  --text-color: #ffffff; 
+  --accent-color: #33ffa8; 
 }
 
-/* Dark mode */
-.dark-mode {
-  --bg-color: #111111;
-  --text-color: #ffffff;
-  --accent-color: #ff7f11;
+
+.light-mode {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #29ab87; 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
 
 body {
@@ -17,10 +21,9 @@ body {
   padding: 0;
   font-family: system-ui, sans-serif;
   background-color: var(--bg-color);
-  color: var(--text-color);
+  color: var(--text-color); 
 }
 
-/* Basic layout */
 nav, footer {
   padding: 1rem 2rem;
   background-color: var(--bg-color);
@@ -30,7 +33,7 @@ nav, footer {
 nav a {
   margin-right: 1rem;
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--accent-color); 
 }
 
 nav a:hover {
@@ -48,6 +51,6 @@ main {
   padding: 2rem;
 }
 
-h1, h2 {
+h1, h3 {
   color: var(--accent-color);
 }

@@ -13,8 +13,6 @@ import ErrorPage from './pages/ErrorPage'
 
 import './index.css'
 
-// document.body.classList.add("dark-mode");
-
 const router = createBrowserRouter([
   {
     path: '/',
