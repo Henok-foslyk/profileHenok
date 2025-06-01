@@ -7,7 +7,7 @@ const Home = () => {
       <p className="text-lg text-gray-600 mb-8">Software Engineer | Student at Williams College</p>
 
       {/* Cards Section */}
-      <div className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* About Card */}
         <Link to="/about" className="card">
           <div className="bg-white shadow-lg rounded-lg p-6 text-center">

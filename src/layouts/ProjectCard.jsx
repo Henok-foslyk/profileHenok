@@ -12,12 +12,12 @@ const ProjectCard = ({
   return (
     <Card
       sx={{
-        maxWidth: 345,
+        maxWidth: 320,
         display: 'flex',
         flexDirection: 'column',
         boxShadow: 3,
         borderRadius: 2,
-        mb: 3,
+        mb: 2,
         '&:hover': { boxShadow: 6 },
       }}
     >
