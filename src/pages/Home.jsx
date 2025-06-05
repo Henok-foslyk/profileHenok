@@ -1,53 +1,73 @@
 import { Link } from 'react-router-dom';
+import { Typography, Grid, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
+
+const cards = [
+  {
+    title: 'About Me',
+    description: 'Learn more about my education background, interests, and experiences.',
+    image: '/images/about.jpg', // Replace with your actual image path
+    link: '/about',
+  },
+  {
+    title: 'Projects',
+    description: 'Explore my software development projects and contributions.',
+    image: '/images/projects.jpg',
+    link: '/projects',
+  },
+  {
+    title: 'Experiences',
+    description: 'Find out about my work experiences and internships.',
+    image: '/images/experiences.jpg',
+    link: '/experiences',
+  },
+  {
+    title: 'On Campus',
+    description: 'Learn about my on-campus activities and involvement at Williams College.',
+    image: '/images/oncampus.jpg',
+    link: '/oncampus',
+  },
+  {
+    title: 'Contact',
+    description: 'Get in touch with me for collaborations or inquiries.',
+    image: '/images/contact.jpg',
+    link: '/contact',
+  },
+];
 
 const Home = () => {
   return (
-    <section className="p-8 text-center">
-      <h1 className="text-4xl font-bold mb-4">Welcome to My Personal Website</h1>
-      <p className="text-lg text-gray-600 mb-8">Software Engineer | Student at Williams College</p>
+    <section style={{ padding: '2rem', textAlign: 'center' }}>
+      <Typography variant="h3" gutterBottom>
+        👋 Hello and Welcome!
+      </Typography>
+      <Typography variant="h5" color="text.secondary" paragraph>
+        I'm a Software Engineer and a student at Williams College.
+      </Typography>
 
-      {/* Cards Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* About Card */}
-        <Link to="/about" className="card">
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <h3 className="text-2xl font-semibold mb-2">About Me</h3>
-            <p className="text-gray-600">Learn more about my education background, interests, and experiences.</p>
-          </div>
-        </Link>
-
-        {/* Projects Card */}
-        <Link to="/projects" className="card">
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <h3 className="text-2xl font-semibold mb-2">Projects</h3>
-            <p className="text-gray-600">Explore my software development projects and contributions.</p>
-          </div>
-        </Link>
-
-        {/* Experiences Card */}
-        <Link to="/experiences" className="card">
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <h3 className="text-2xl font-semibold mb-2">Experiences</h3>
-            <p className="text-gray-600">Find out about my work experiences and internships.</p>
-          </div>
-        </Link>
-
-        {/* OnCampus Card */}
-        <Link to="/oncampus" className="card">
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <h3 className="text-2xl font-semibold mb-2">On Campus</h3>
-            <p className="text-gray-600">Learn about my on-campus activities and involvement at Williams College.</p>
-          </div>
-        </Link>
-
-        {/* Contact Card */}
-        <Link to="/contact" className="card">
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <h3 className="text-2xl font-semibold mb-2">Contact</h3>
-            <p className="text-gray-600">Get in touch with me for collaborations or inquiries.</p>
-          </div>
-        </Link>
-      </div>
+      <Grid container spacing={4} justifyContent="center">
+        {cards.map((card, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <Card>
+              <CardActionArea component={Link} to={card.link}>
+                <CardMedia
+                  component="img"
+                  height="180"
+                  image={card.image}
+                  alt={card.title}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {card.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {card.description}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
     </section>
   );
 };

@@ -12,7 +12,8 @@ const ProjectCard = ({
   return (
     <Card
       sx={{
-        maxWidth: 320,
+        width: 320,
+        height: 480, // fixed height for equal cards
         display: 'flex',
         flexDirection: 'column',
         boxShadow: 3,
@@ -31,12 +32,24 @@ const ProjectCard = ({
         />
       )}
 
-      <CardContent sx={{ flexGrow: 1 }}>
+      <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
         <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', mb: 1 }}>
           {title}
         </Typography>
 
-        <Typography variant="body2" color="text.primary" sx={{ mb: 2 }}>
+        <Typography
+          variant="body2"
+          color="text.primary"
+          sx={{
+            mb: 2,
+            display: '-webkit-box',
+            WebkitLineClamp: 4,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            flexGrow: 1, // take remaining space so buttons stay at bottom
+          }}
+        >
           {description}
         </Typography>
 
