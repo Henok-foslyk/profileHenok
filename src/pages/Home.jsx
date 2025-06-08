@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Typography, Grid, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
-
+import Dishevled from '../assets/images/dishevled.jpg'
 const cards = [
   {
     title: 'About Me',
     description: 'Learn more about my education background, interests, and experiences.',
-    image: '/images/about.jpg', // Replace with your actual image path
+    image: Dishevled,
     link: '/about',
   },
   {

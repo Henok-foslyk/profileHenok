@@ -1,116 +1,129 @@
-import { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import {
+  Box,
+  Typography,
+  Link,
+  Grid,
+  Paper,
+  TextField,
+  Button,
+  Snackbar,
+  Alert,
+} from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = import.meta.env.VITE_service_id
+const TEMPLATE_ID = import.meta.env.VITE_template_id
+const PUBLIC_KEY = import.meta.env.VITE_public_key
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const form = useRef();
+  const [open, setOpen] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Here you would handle form submission, e.g., send an email or store the data
-    console.log('Form submitted:', formData);
+
+    emailjs
+      //MOVE TO ENV
+      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then(
+        () => {
+          setOpen(true);
+          form.current.reset();
+        },
+        () => {
+          setError(true);
+        }
+      );
   };
 
   return (
-    <section className="p-8">
-      <h2 className="text-3xl font-semibold mb-6">Contact Me</h2>
+    <>
+      <Paper elevation={3} sx={{ maxHeight: 1000, maxWidth: 1000, margin: '0 auto', p: 6 }}>
+        <Typography variant="h4" gutterBottom align="center">
+          Contact Me
+        </Typography>
 
-      <p className="text-gray-700 mb-6">
-        Feel free to reach out to me via email, or fill out the form below, and I'll get back to you as soon as possible.
-      </p>
+        <Grid container spacing={4} alignItems="center" mb={4}>
+          <Grid item xs={12} sm={6}>
+            <EmailIcon color="primary" sx={{ verticalAlign: 'middle', mr: 1 }} />
+            <Link href="mailto:henokmisginafisseha@gmail.com" underline="hover">
+              henokmisginafisseha@gmail.com
+            </Link>
+          </Grid>
 
-      {/* Contact Info */}
-      <div className="mb-6">
-        <h3 className="text-2xl font-semibold mb-2">Contact Information</h3>
-        <ul className="text-gray-700">
-          <li>
-            <strong>Email:</strong> <a href="mailto:henok@example.com" className="text-accent hover:underline">henok@example.com</a>
-          </li>
-          <li>
-            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/henok" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">linkedin.com/in/henok</a>
-          </li>
-          <li>
-            <strong>GitHub:</strong> <a href="https://github.com/henok" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">github.com/henok</a>
-          </li>
-        </ul>
-      </div>
+          <Grid item xs={12} sm={6}>
+            <GitHubIcon color="action" sx={{ verticalAlign: 'middle', mr: 1 }} />
+            <Link href="https://github.com/Henok-foslyk" target="_blank" underline="hover">
+              github.com/Henok-foslyk
+            </Link>
+          </Grid>
 
-      {/* Contact Form */}
-      <div className="bg-white shadow-lg rounded-lg p-6">
-        <h3 className="text-2xl font-semibold mb-4">Send Me a Message</h3>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-700 mb-2">Your Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full p-3 border border-gray-300 rounded-md"
-              required
-            />
-          </div>
+          <Grid item xs={12} sm={6}>
+            <LinkedInIcon color="primary" sx={{ verticalAlign: 'middle', mr: 1 }} />
+            <Link href="https://linkedin.com/in/henokmisginafisseha" target="_blank" underline="hover">
+              linkedin.com/in/henokmisginafisseha
+            </Link>
+          </Grid>
+        </Grid>
 
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 mb-2">Your Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full p-3 border border-gray-300 rounded-md"
-              required
-            />
-          </div>
+        <Typography variant="h6" gutterBottom>
+          Send me a message:
+        </Typography>
 
-          <div className="mb-4">
-            <label htmlFor="message" className="block text-gray-700 mb-2">Your Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              className="w-full p-3 border border-gray-300 rounded-md"
-              rows="6"
-              required
-            ></textarea>
-          </div>
+        <Box component="form" ref={form} onSubmit={sendEmail} sx={{ mt: 2 }}>
+          <TextField
+            fullWidth
+            label="Your Name"
+            name="name"
+            required
+            margin="normal"
+          />
+          <TextField
+            fullWidth
+            label="Your Email"
+            name="email"
+            type="email"
+            required
+            margin="normal"
+          />
+          <TextField
+            fullWidth
+            label="Message"
+            name="message"
+            multiline
+            rows={4}
+            required
+            margin="normal"
+          />
+          <Button variant="contained" type="submit" sx={{ mt: 2 }}>
+            Send
+          </Button>
+        </Box>
 
-          <button
-            type="submit"
-            className="w-full py-3 bg-accent text-white font-semibold rounded-md hover:bg-accent-dark focus:outline-none"
-          >
-            Send Message
-          </button>
-        </form>
-      </div>
+        <Snackbar open={open} autoHideDuration={4000} onClose={() => setOpen(false)}>
+          <Alert onClose={() => setOpen(false)} severity="success" sx={{ width: '100%' }}>
+            Message sent successfully!
+          </Alert>
+        </Snackbar>
 
-      {/* Optional: Social Media Links */}
-      <div className="mt-6">
-        <h3 className="text-2xl font-semibold mb-4">Connect with Me</h3>
-        <ul className="flex space-x-6">
-          <li>
-            <a href="https://twitter.com/henok" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/henok" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
-              Instagram
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <Snackbar open={error} autoHideDuration={4000} onClose={() => setError(false)}>
+          <Alert onClose={() => setError(false)} severity="error" sx={{ width: '100%' }}>
+            Failed to send message. Try again later.
+          </Alert>
+        </Snackbar>
+      </Paper>
+      <Box sx={{ mt: 4, textAlign: 'center', color: 'text.secondary' }}>
+          <Typography variant="h4" fontStyle="italic" color="primary.main">
+            💡 Why do software engineers always mix up Halloween and Christmas?<br />
+            Because Oct 31 == Dec 25.
+          </Typography>
+        </Box>
+    </>
   );
 };
 
