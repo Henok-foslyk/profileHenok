@@ -12,48 +12,124 @@ const Experiences = () => {
       </p>
 
       <div className="flex flex-wrap gap-6 justify-center">
+        {/* Placeholder TO FILL Cards */}
         <div className="w-full max-w-[700px]">
           <ExperienceCard 
-            title="Software Engineering Intern"
-            company="Klear"
+            title="TO FILL"
+            company=""
             logo={flaskLogo}
-            duration="June 2023 - August 2023"
-            place="New York, New York (Remote)"
+            duration=""
+            place=""
+            responsibilities={[]}
+          />
+        </div>
+
+        <div className="w-full max-w-[700px]">
+          <ExperienceCard 
+            title="TO FILL"
+            company=""
+            logo={flaskLogo}
+            duration=""
+            place=""
+            responsibilities={[]}
+          />
+        </div>
+
+        {/* Updated/Added Experiences */}
+        <div className="w-full max-w-[700px]">
+          <ExperienceCard 
+            title="Software Engineer Intern"
+            company="Klear Inc."
+            logo={flaskLogo}
+            duration="May 2024 – August 2024"
+            place="San Francisco, CA - Remote"
             responsibilities={[
-              "Developed machine learning algorithms to personalize content recommendations.",
-              "Collaborated with cross-functional teams to improve product features.",
-              "Contributed to codebase improvements and bug fixes using Python and TensorFlow.",
-              "Worked with technologies: Python, TensorFlow, Flask, AWS, Git"
+              "Reduced page load times by 75% by programming and integrating a front-end architecture for a Python Flask backend.",
+              "Developed a scalable prototype integrating Allianz's insurance API, used by 200+ clients for high-cost transactions.",
+              "Delivered a complete API prototype 1 week ahead of schedule with a team of 4 SWE interns."
             ]}
           />
         </div>
 
         <div className="w-full max-w-[700px]">
           <ExperienceCard 
-            title="Research Assistant"
-            company="Williams Robotics Lab"
-            logo={flaskLogo}
-            duration="September 2022 - May 2023"
-            place="Williamstown, MA"
-            responsibilities={[
-              "Improved autonomous robot navigation and decision-making algorithms.",
-              "Programmed robot control systems and collected test data.",
-              "Worked with technologies: ROS, Python, C++, OpenCV, Machine Learning"
-            ]}
-          />
-        </div>
-
-        <div className="w-full max-w-[700px]">
-          <ExperienceCard 
-            title="AI Fellow"
+            title="AI Studio Fellow"
             company="Microsoft"
             logo={flaskLogo}
-            duration="Summer 2022"
-            place="Remote"
+            duration="August 2024 – December 2024"
+            place="Cambridge, MA - Hybrid"
             responsibilities={[
-              "Researched and developed NLP models in a team-based project.",
-              "Gained experience with Azure AI tools and large-scale cloud services.",
-              "Worked with technologies: Python, PyTorch, Azure AI, NLP"
+              "Developing News Copilot, an ML model to automate news categorization and reduce manual labeling by 80%.",
+              "Collaborating with a team across 2 universities under the guidance of a Microsoft Principal Director of AI Engineering."
+            ]}
+          />
+        </div>
+
+        <div className="w-full max-w-[700px]">
+          <ExperienceCard 
+            title="Software Engineer and Research Assistant"
+            company="Williams Robotics Lab"
+            logo={flaskLogo}
+            duration="May 2024 – August 2024"
+            place="Williamstown, MA"
+            responsibilities={[
+              "Developed backend features for Conversation, a user-friendly 3D modeling tool.",
+              "Integrated line/arc offset copying and division points as new modeling features."
+            ]}
+          />
+        </div>
+
+        <div className="w-full max-w-[700px]">
+          <ExperienceCard 
+            title="Backend Developer"
+            company="Center for Learning in Action, Williams College"
+            logo={flaskLogo}
+            duration="April 2024 – August 2024"
+            place="Williamstown, MA"
+            responsibilities={[
+              "Built scalable backend architecture in Golang, improving DB query performance by 35%.",
+              "Created a Google Maps-powered ride-matching algorithm for campus transport."
+            ]}
+          />
+        </div>
+
+        <div className="w-full max-w-[700px]">
+          <ExperienceCard 
+            title="Content Tutor"
+            company="Williams College Peer Tutoring Center"
+            logo={flaskLogo}
+            duration="May 2024 – Present"
+            place="Williamstown, MA"
+            responsibilities={[
+              "Tutoring students in data structures, debugging, and core CS concepts.",
+              "Providing direct hands-on support in courses such as CS and Linear Algebra."
+            ]}
+          />
+        </div>
+
+        <div className="w-full max-w-[700px]">
+          <ExperienceCard 
+            title="Teaching Assistant"
+            company="Williams College CS Department"
+            logo={flaskLogo}
+            duration="May 2023 – Present"
+            place="Williamstown, MA"
+            responsibilities={[
+              "Assisted 80+ students with Python and Java code debugging and problem-solving.",
+              "Supported learning in foundational CS courses and data structure development."
+            ]}
+          />
+        </div>
+
+        <div className="w-full max-w-[700px]">
+          <ExperienceCard 
+            title="Causal Inference Research Assistant"
+            company="Williams College CS Department"
+            logo={flaskLogo}
+            duration="May 2023 – May 2024"
+            place="Williamstown, MA"
+            responsibilities={[
+              "Designed and implemented a Python algorithm to model biological contagion via causal chain graphs."
             ]}
           />
         </div>
