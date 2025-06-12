@@ -1,69 +1,114 @@
+import React, { useState } from 'react';
 import { Stack, Box } from '@mui/material';
 import ProjectCard from '../layouts/ProjectCard';
-import flaskLogo from "../assets/images/flask.png";
+import flaskLogo from '../assets/images/flask.png';
+import ProjectDisplay from "../layouts/ProjectDisplay"
 
 const Projects = () => {
-  const projects = [
+  const allProjects = [
+    // Featured Projects
     {
-      title: "ArtScript",
-      description:
-        "A Domain Specific Programming Language designed to produce SVG drawings. Created to help teach children programming concepts through fun, visual projects like drawing a bunny.",
+      title: 'ArtScript',
+      description: 'A Domain Specific Programming Language designed to produce SVG drawings. Created to help teach children programming concepts through fun, visual projects like drawing a bunny.',
       image: flaskLogo,
-      techStack: ['JavaScript', 'SVG', 'Domain-Specific Language'],
-      liveDemoLink: "https://your-rtScript-demo-link.com",
-      repoLink: "https://github.com/yourusername/rtScript",
+      techStack: ['TECH-STACK-HERE'],
+      liveDemoLink: 'https://your-artscript-demo-link.com',
+      repoLink: 'https://github.com/yourusername/artscript',
+      featured: true,
     },
     {
-      title: "News Copilot",
-      description:
-        "A web application that curates the latest news articles based on user interests. The app uses machine learning algorithms to filter and recommend relevant content.",
+      title: 'News Classification Agent',
+      description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.',
       image: flaskLogo,
-      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Machine Learning'],
-      liveDemoLink: "https://news-copilot-demo.com",
-      repoLink: "https://github.com/yourusername/news-copilot",
+      techStack: ['TECH-STACK-HERE'],
+      liveDemoLink: '',
+      repoLink: '',
+      featured: true,
     },
     {
-      title: "Ride-Matching App",
-      description:
-        "A mobile app that matches drivers and passengers based on location and timing to reduce traffic and carbon footprint.",
+      title: 'Spotify Project',
+      description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.',
       image: flaskLogo,
-      techStack: ['React Native', 'Firebase', 'Google Maps API'],
-      liveDemoLink: "https://ride-matching-app.com",
-      repoLink: "https://github.com/yourusername/ride-matching",
+      techStack: ['Express', 'React', 'Node.js', 'Firebase', 'JavaScript'],
+      liveDemoLink: '',
+      repoLink: '',
+      featured: true,
     },
     {
-      title: "3D Modeling Software",
-      description:
-        "A desktop application for creating and editing 3D models with support for texturing, lighting, and rendering.",
+      title: 'Help Me Study Extension',
+      description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.',
       image: flaskLogo,
-      techStack: ['C++', 'OpenGL', '3D Graphics', 'Mathematics'],
-      liveDemoLink: "https://3d-modeling-software-demo.com",
-      repoLink: "https://github.com/yourusername/3d-modeling-software",
+      techStack: ['TECH-STACK-HERE'],
+      liveDemoLink: '',
+      repoLink: '',
+      featured: true,
     },
+
+    // All Projects
+    { title: 'Personal Profile', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Personal Webpage', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'MineSweeper Game', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Shopping List App', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Weather App', description: 'A mobile app demonstrating use of APIs and HTTP requests to fetch and display weather information.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Calendar App', description: 'Focuses on upgrading and modernizing deprecated code for calendar functionalities.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Encrypting S1.0', description: 'A final cryptography project implementing encryption techniques covered in the course.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Encryption Puzzle Solver', description: 'Solved various encryption challenges to deepen understanding of cryptographic techniques.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'YOLO Object Detection', description: 'Deep learning project using YOLO to perform object detection, training and evaluating performance on multiple datasets.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Emotion Detection', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Movie Chatbots', description: 'Built multiple chatbot models using NLP techniques including regex, Naive Bayes, Logistic Regression, word vectors, and transformers.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Bubble Shooter', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Snake Game', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Trie Implementation', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: "Conway's Game of Life", description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Thomas Jefferson School Website', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'ReciMe AI Recipe Assistant', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Weather & News App (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Tic Tac Toe Game (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Book List (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
   ];
+
+  const featuredProjects = allProjects.filter(project => project.featured);
+  const otherProjects = allProjects.filter(project => !project.featured);
+
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleOpen = (project) => {
+    setSelectedProject(project);
+    setModalOpen(true);
+  };
+
+  const handleClose = () => {
+    setSelectedProject(null);
+    setModalOpen(false);
+  };
 
   return (
     <section className="p-8">
-      <h2 className="text-3xl font-semibold mb-4">Projects</h2>
+      <h2 className="text-3xl font-semibold mb-4">Featured Projects</h2>
       <p className="text-gray-700 mb-6">
-        Below is a showcase of my technical work, including personal projects, contributions to open-source software, and other applications I've built.
+        These are some of my favorite and most impactful projects.
       </p>
-
-      <Stack
-        direction="row"
-        flexWrap="wrap"
-        justifyContent="flex-start"
-        gap={4} // 4 * 8px = 32px gap between cards horizontally and vertically
-      >
-        {projects.map((project, idx) => (
-          <Box
-            key={idx}
-            sx={{ width: 320 }}
-          >
+      <Stack direction="row" flexWrap="wrap" justifyContent="flex-start" gap={4}>
+        {featuredProjects.map((project, idx) => (
+          <Box key={idx} sx={{ width: 320, cursor: 'pointer' }} onClick={() => handleOpen(project)}>
             <ProjectCard {...project} />
           </Box>
         ))}
       </Stack>
+
+      <h2 className="text-3xl font-semibold mt-12 mb-4">All Projects</h2>
+      <p className="text-gray-700 mb-6">
+        A comprehensive list of my projects across courses, internships, and personal work.
+      </p>
+      <Stack direction="row" flexWrap="wrap" justifyContent="flex-start" gap={4}>
+        {otherProjects.map((project, idx) => (
+          <Box key={idx} sx={{ width: 320, cursor: 'pointer' }} onClick={() => handleOpen(project)}>
+            <ProjectCard {...project} />
+          </Box>
+        ))}
+      </Stack>
+      <ProjectDisplay open={modalOpen} onClose={handleClose} project={selectedProject} />
     </section>
   );
 };
