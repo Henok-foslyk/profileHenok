@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Stack, Box } from '@mui/material';
 import ProjectCard from '../layouts/ProjectCard';
 import flaskLogo from '../assets/images/flask.png';
+import bunny from '../assets/images/artscript.png';
 import ProjectDisplay from "../layouts/ProjectDisplay"
 
 const Projects = () => {
@@ -9,12 +10,19 @@ const Projects = () => {
     // Featured Projects
     {
       title: 'ArtScript',
-      description: 'A Domain Specific Programming Language designed to produce SVG drawings. Created to help teach children programming concepts through fun, visual projects like drawing a bunny.',
-      image: flaskLogo,
-      techStack: ['TECH-STACK-HERE'],
+      description: 'ArtScript is a custom-designed programming language that enables users—especially beginners and aspiring artists—to create geometric art using simple, intuitive commands. Built around core concepts such as drawing with a virtual pen, using coordinates, and repeating patterns, ArtScript allows users to generate lines, circles, rectangles, and complex polygons with precision. The language emphasizes accessibility, creativity, and mathematical elegance, making it an engaging educational tool for learning programming fundamentals through visual expression. Inspired by geometric artwork from the Williams College Museum of Art, ArtScript merges computational logic with artistic freedom.',
+      image: bunny,
+      techStack: ['F#', '.NET', 'SVG', 'Parser Combinators'],
       liveDemoLink: 'https://your-artscript-demo-link.com',
-      repoLink: 'https://github.com/yourusername/artscript',
+      repoLink: 'https://github.com/Henok-foslyk/ArtScript_complete',
       featured: true,
+      skills: [
+        'Designed and parsed a custom language syntax',
+        'Built and traversed an abstract syntax tree (AST)',
+        'Implemented drawing logic based on geometric commands',
+        'Applied functional programming concepts in F#',
+        'Handled SVG output generation programmatically'
+      ]
     },
     {
       title: 'News Classification Agent',
