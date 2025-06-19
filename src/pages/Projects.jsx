@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { Stack, Box } from '@mui/material';
 import ProjectCard from '../layouts/ProjectCard';
 import flaskLogo from '../assets/images/flask.png';
-import bunny from '../assets/images/artscript.png';
+import bunnyPic from '../assets/images/artscript.png';
+import newsPic from '../assets/images/News.png';
+import helpMeStudyPic from '../assets/images/helpmestudy.png';
+import spotivibe from '../assets/images/SpotiVibe\ 3.png'
 import ProjectDisplay from "../layouts/ProjectDisplay"
 
 const Projects = () => {
@@ -11,7 +14,7 @@ const Projects = () => {
     {
       title: 'ArtScript',
       description: 'ArtScript is a custom-designed programming language that enables users—especially beginners and aspiring artists—to create geometric art using simple, intuitive commands. Built around core concepts such as drawing with a virtual pen, using coordinates, and repeating patterns, ArtScript allows users to generate lines, circles, rectangles, and complex polygons with precision. The language emphasizes accessibility, creativity, and mathematical elegance, making it an engaging educational tool for learning programming fundamentals through visual expression. Inspired by geometric artwork from the Williams College Museum of Art, ArtScript merges computational logic with artistic freedom.',
-      image: bunny,
+      image: bunnyPic,
       techStack: ['F#', '.NET', 'SVG', 'Parser Combinators'],
       liveDemoLink: 'https://your-artscript-demo-link.com',
       repoLink: 'https://github.com/Henok-foslyk/ArtScript_complete',
@@ -27,7 +30,7 @@ const Projects = () => {
     {
       title: 'News Classification Agent',
       description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.',
-      image: flaskLogo,
+      image: newsPic,
       techStack: ['TECH-STACK-HERE'],
       liveDemoLink: '',
       repoLink: '',
@@ -36,7 +39,7 @@ const Projects = () => {
     {
       title: 'Spotify Project',
       description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.',
-      image: flaskLogo,
+      image: spotivibe,
       techStack: ['Express', 'React', 'Node.js', 'Firebase', 'JavaScript'],
       liveDemoLink: '',
       repoLink: '',
@@ -45,7 +48,7 @@ const Projects = () => {
     {
       title: 'Help Me Study Extension',
       description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.',
-      image: flaskLogo,
+      image: helpMeStudyPic,
       techStack: ['TECH-STACK-HERE'],
       liveDemoLink: '',
       repoLink: '',
