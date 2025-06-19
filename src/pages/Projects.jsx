@@ -5,7 +5,7 @@ import flaskLogo from '../assets/images/flask.png';
 import bunnyPic from '../assets/images/artscript.png';
 import newsPic from '../assets/images/News.png';
 import helpMeStudyPic from '../assets/images/helpmestudy.png';
-import spotivibe from '../assets/images/SpotiVibe\ 3.png'
+import spotivibe from '../assets/images/SpotiVibe.png'
 import ProjectDisplay from "../layouts/ProjectDisplay"
 
 const Projects = () => {
@@ -28,31 +28,51 @@ const Projects = () => {
       ]
     },
     {
-      title: 'News Classification Agent',
-      description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.',
+      title: 'News Copilot',
+      description: 'A machine learning project developed after studying ML fundamentals at Cornell. The goal was to build a model that quickly and accurately categorizes news articles by analyzing their headlines and descriptions—enhancing user experience by reducing information overload. Using a Kaggle BBC news dataset, we explored text characteristics, built a logistic regression baseline, experimented with multiple classifiers, and performed hyperparameter optimization for improved accuracy.',
       image: newsPic,
-      techStack: ['TECH-STACK-HERE'],
+      techStack: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter Notebook'],
       liveDemoLink: '',
       repoLink: '',
       featured: true,
+      skills: [
+        "Supervised learning for text classification",
+        "Model evaluation and hyperparameter tuning",
+        "Experimentation with logistic regression, Naive Bayes, Random Forest, and KNN"
+      ]
     },
     {
-      title: 'Spotify Project',
-      description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.',
+      title: 'Spotivibe',
+      description: 'As part of a simulated internship at Spotify, we built a full-stack social music web application using React, Express, and Firebase. The app leverages the Spotify API to let users view their top songs and artists, customize their music profiles, discover other users, engage in forums, and exchange private messages. Designed to increase user engagement beyond listening, our platform transforms Spotify into a social experience. All API and database interactions are routed through an Express backend for security and scalability. Our team also implemented authentication via Spotify OAuth and prioritized responsive, professional UI/UX throughout development.',
       image: spotivibe,
-      techStack: ['Express', 'React', 'Node.js', 'Firebase', 'JavaScript'],
+      techStack: ['React', 'Express', 'Node.js', 'Firebase', 'Spotify API', 'OAuth 2.0', 'JavaScript'],
       liveDemoLink: '',
       repoLink: '',
       featured: true,
-    },
+      skills: [
+        "Full-stack development with React and Express",
+        "Real-time database management with Firebase",
+        "Spotify OAuth integration and secure API handling",
+        "User authentication and profile privacy controls",
+        "Forum and messaging system implementation",
+        "Responsive and accessible UI design without Material UI"
+      ]
+    },    
     {
       title: 'Help Me Study Extension',
-      description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.',
+      description: 'HelpMeStudy is a lightweight browser extension designed to promote responsible digital habits among students by tracking web activity and providing intentional, customizable reminders. Built during a design sprint focused on fostering responsibility, the tool evolved from a pop-up quiz idea into a productivity-focused extension with user-centered features. It unobtrusively encourages users to realign their browsing behavior with academic goals, using gentle nudges and time-based notifications. Our iterative development emphasized empathy-driven design, usability testing, and responsiveness to user feedback—making the final product both practical and impactful.',
       image: helpMeStudyPic,
-      techStack: ['TECH-STACK-HERE'],
+      techStack: ['JavaScript', 'Chrome Extension APIs', 'HTML', 'CSS', 'Figma (Prototyping)', 'User Testing Tools'],
       liveDemoLink: '',
       repoLink: '',
       featured: true,
+      skills: [
+        "User-centered design and empathy mapping",
+        "Browser extension development with Chrome APIs",
+        "Iterative prototyping and usability testing",
+        "Behavioral nudges for digital well-being",
+        "Notification systems and time-tracking logic"
+      ]
     },
 
     // All Projects
