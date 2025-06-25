@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Typography, Grid, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
-import Dishevled from '../assets/images/dishevled.jpg'
+import campus from '../assets/images/williamsCampus.png'
+import henok from '../assets/images/henok.jpg'
 const cards = [
   {
     title: 'About Me',
     description: 'Learn more about my education background, interests, and experiences.',
-    image: Dishevled,
+    image: henok,
     link: '/about',
   },
   {
@@ -23,7 +24,7 @@ const cards = [
   {
     title: 'On Campus',
     description: 'Learn about my on-campus activities and involvement at Williams College.',
-    image: '/images/oncampus.jpg',
+    image: campus,
     link: '/oncampus',
   },
   {
