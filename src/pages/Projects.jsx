@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Stack, Box } from '@mui/material';
 import ProjectCard from '../layouts/ProjectCard';
-import flaskLogo from '../assets/images/flask.png';
+import underConstruction from '../assets/images/underConstruction.jpeg';
 import bunnyPic from '../assets/images/artscript.png';
 import newsPic from '../assets/images/News.png';
+import bubblePic from '../assets/images/bubble.png';
+import reciMe from '../assets/images/ReciMe.png';
 import helpMeStudyPic from '../assets/images/helpmestudy.png';
 import spotivibe from '../assets/images/SpotiVibe.png';
 import conwayGIF from '../assets/gifs/conway.gif';
@@ -29,6 +31,37 @@ const Projects = () => {
         'Implemented drawing logic based on geometric commands',
         'Applied functional programming concepts in F#',
         'Handled SVG output generation programmatically'
+      ]
+    },
+    {
+      title: 'ReciME',
+      description: 'This Edamam Recipe Web App is a full-stack application that helps users discover and manage recipes. It integrates the Edamam Recipe API for official content and leverages Firebase Firestore for user-generated content. Users can search, filter, and save recipes, interact through comments and ratings, and even chat with a built-in assistant for help. Designed with modular pages including a dashboard, admin panel, and recipe creation interface, the app emphasizes usability and scalability. Developed in React with a Node/Express backend, it demonstrates best practices in API integration, real-time databases, and user interaction flows.',
+      image: reciMe,
+      techStack: [
+        'React', 
+        'Node.js', 
+        'Express.js', 
+        'Firebase Firestore', 
+        'Firebase Authentication', 
+        'Edamam Recipe API', 
+        'CSS', 
+        'Chatbot Integration', 
+        'Figma (UI Design)'
+      ],
+      liveDemoLink: '',
+      repoLink: '',
+      featured: true,
+      skills: [
+        'Full-stack development using React and Express.js',
+        'API integration with Edamam for recipe data',
+        'Database design and CRUD operations with Firebase Firestore',
+        'Commenting and rating systems with moderation and sorting',
+        'Chatbot development for recipe assistance',
+        'Admin workflows for content approval and publishing',
+        'Authentication and role-based access control',
+        'Responsive design and interactive user interface',
+        'Image upload (optional stretch goal)',
+        'Social sharing and user following (optional stretch goal)'
       ]
     },
     {
@@ -78,29 +111,30 @@ const Projects = () => {
         "Notification systems and time-tracking logic"
       ]
     },
+    
+    
 
     // All Projects
-    { title: 'Personal Profile', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Personal Profile', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Personal Webpage', description: '', image: personalWebGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'MineSweeper Game', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Shopping List App', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Weather App', description: 'A mobile app demonstrating use of APIs and HTTP requests to fetch and display weather information.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Calendar App', description: 'Focuses on upgrading and modernizing deprecated code for calendar functionalities.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Encrypting S1.0', description: 'A final cryptography project implementing encryption techniques covered in the course.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Encryption Puzzle Solver', description: 'Solved various encryption challenges to deepen understanding of cryptographic techniques.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'YOLO Object Detection', description: 'Deep learning project using YOLO to perform object detection, training and evaluating performance on multiple datasets.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Emotion Detection', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Movie Chatbots', description: 'Built multiple chatbot models using NLP techniques including regex, Naive Bayes, Logistic Regression, word vectors, and transformers.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Bubble Shooter', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'MineSweeper Game', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Shopping List App', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Weather App', description: 'A mobile app demonstrating use of APIs and HTTP requests to fetch and display weather information.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Calendar App', description: 'Focuses on upgrading and modernizing deprecated code for calendar functionalities.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Encrypting S1.0', description: 'A final cryptography project implementing encryption techniques covered in the course.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Encryption Puzzle Solver', description: 'Solved various encryption challenges to deepen understanding of cryptographic techniques.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'YOLO Object Detection', description: 'Deep learning project using YOLO to perform object detection, training and evaluating performance on multiple datasets.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Emotion Detection', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Movie Chatbots', description: 'Built multiple chatbot models using NLP techniques including regex, Naive Bayes, Logistic Regression, word vectors, and transformers.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Bubble Shooter', description: '', image: bubblePic, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Snake Game', description: '', image: snakeGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Flip Book', description: '', image: flipbookGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Trie Implementation', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Trie Implementation', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: "Conway's Game of Life", description: '', image: conwayGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Thomas Jefferson School Website', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'ReciMe AI Recipe Assistant', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Weather & News App (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Tic Tac Toe Game (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Book List (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: flaskLogo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Thomas Jefferson School Website', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Weather & News App (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Tic Tac Toe Game (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Book List (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
   ];
 
   const featuredProjects = allProjects.filter(project => project.featured);
