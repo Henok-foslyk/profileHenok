@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom';
 import { Typography, Grid, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
 import campus from '../assets/images/williamsCampus.png'
 import henok from '../assets/images/henok.jpg'
+import projects from '../assets/images/projects.png'
+import contact from '../assets/images/contact.png'
+import experience from '../assets/images/experience.png'
 const cards = [
   {
     title: 'About Me',
@@ -12,13 +15,13 @@ const cards = [
   {
     title: 'Projects',
     description: 'Explore my software development projects and contributions.',
-    image: '/images/projects.jpg',
+    image: projects,
     link: '/projects',
   },
   {
     title: 'Experiences',
     description: 'Find out about my work experiences and internships.',
-    image: '/images/experiences.jpg',
+    image: experience,
     link: '/experiences',
   },
   {
@@ -28,9 +31,9 @@ const cards = [
     link: '/oncampus',
   },
   {
-    title: 'Contact',
+    title: 'Contact Me',
     description: 'Get in touch with me for collaborations or inquiries.',
-    image: '/images/contact.jpg',
+    image: contact,
     link: '/contact',
   },
 ];
@@ -48,11 +51,11 @@ const Home = () => {
       <Grid container spacing={4} justifyContent="center">
         {cards.map((card, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card>
-              <CardActionArea component={Link} to={card.link}>
+            <Card sx={{ minHeight: 360, display: 'flex', flexDirection: 'column' }}>
+              <CardActionArea component={Link} to={card.link} sx={{ flexGrow: 1 }}>
                 <CardMedia
                   component="img"
-                  height="180"
+                  height="290" // increased height
                   image={card.image}
                   alt={card.title}
                 />
