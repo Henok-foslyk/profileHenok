@@ -3,6 +3,9 @@ import Navbar from './layouts/Navbar';
 import Footer from './layouts/Footer';
 import { useState, useMemo } from 'react';
 import { ThemeProvider, createTheme, CssBaseline, Container, Box } from '@mui/material';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);

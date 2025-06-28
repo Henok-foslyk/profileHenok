@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Typography, CardMedia, Button, Box } from '@mui/material';
+import TechSlider from './TechSlider'
+
 
 const ProjectCard = ({ 
   title, 
@@ -52,29 +54,9 @@ const ProjectCard = ({
         >
           {description}
         </Typography>
-
+        
         {/* Tech Stack */}
-        {techStack.length > 0 && (
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: 2 }}>
-            {techStack.map((tech, idx) => (
-              <Box
-                key={idx}
-                component="span"
-                sx={{
-                  bgcolor: 'primary.main',
-                  color: 'primary.contrastText',
-                  px: 1.5,
-                  py: 0.5,
-                  borderRadius: 1,
-                  fontSize: '0.75rem',
-                  fontWeight: 'medium',
-                }}
-              >
-                {tech}
-              </Box>
-            ))}
-          </Box>
-        )}
+        <TechSlider stack={techStack} />
 
         {/* Links */}
         <Box sx={{ display: 'flex', gap: 2 }}>

@@ -11,6 +11,7 @@ import {
   Box,
   Grid
 } from '@mui/material';
+import TechSlider from './TechSlider'
 
 const ProjectDisplay = ({ open, onClose, project }) => {
   if (!project) return null;
@@ -54,11 +55,7 @@ const ProjectDisplay = ({ open, onClose, project }) => {
         <Typography variant="subtitle1" gutterBottom>
           Tech Stack:
         </Typography>
-        <Stack direction="row" spacing={1} flexWrap="wrap" mb={2}>
-          {techStack.map((tech, idx) => (
-            <Chip key={idx} label={tech} color="primary" variant="outlined" />
-          ))}
-        </Stack>
+        <TechSlider stack={techStack} />
       </DialogContent>
 
       <DialogActions>
