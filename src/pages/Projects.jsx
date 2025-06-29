@@ -19,6 +19,9 @@ import bookstore from "../assets/images/bookstore.png"
 import tictactoe from "../assets/images/tictactoe.png"
 import weather from "../assets/images/weather&news.png"
 import thomasjeff from "../assets/images/thomasjeff.png"
+import emotion from "../assets/images/emotion.png"
+import yolo from "../assets/images/yolo.png"
+import movieChat from "../assets/images/movieChat.png"
 
 const Projects = () => {
   const allProjects = [
@@ -121,17 +124,17 @@ const Projects = () => {
     
 
     // All Projects
-    { title: 'Personal Profile', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Personal Profile', description: '', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Personal Webpage', description: '', image: personalWebGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'MineSweeper Game', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Shopping List App', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'MineSweeper Game', description: '', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Shopping List App', description: '', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Weather App', description: 'A mobile app demonstrating use of APIs and HTTP requests to fetch and display weather information.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Calendar App', description: 'Focuses on upgrading and modernizing deprecated code for calendar functionalities.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Encrypting S1.0', description: 'A final cryptography project implementing encryption techniques covered in the course.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Encryption Puzzle Solver', description: 'Solved various encryption challenges to deepen understanding of cryptographic techniques.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'YOLO Object Detection', description: 'Deep learning project using YOLO to perform object detection, training and evaluating performance on multiple datasets.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Emotion Detection', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Movie Chatbots', description: 'Built multiple chatbot models using NLP techniques including regex, Naive Bayes, Logistic Regression, word vectors, and transformers.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'YOLO Object Detection', description: '', image: yolo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Emotion Detection', description: '', image: emotion, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Movie Chatbots', description: '', image: movieChat, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Bubble Shooter', description: '', image: bubblePic, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Snake Game', description: '', image: snakeGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Flip Book', description: '', image: flipbookGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
