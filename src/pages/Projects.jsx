@@ -22,6 +22,8 @@ import thomasjeff from "../assets/images/thomasjeff.png"
 import emotion from "../assets/images/emotion.png"
 import yolo from "../assets/images/yolo.png"
 import movieChat from "../assets/images/movieChat.png"
+import sift from "../assets/images/sift.png"
+import encryption from "../assets/images/encryption.png"
 
 const Projects = () => {
   const allProjects = [
@@ -130,8 +132,8 @@ const Projects = () => {
     { title: 'Shopping List App', description: '', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Weather App', description: 'A mobile app demonstrating use of APIs and HTTP requests to fetch and display weather information.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Calendar App', description: 'Focuses on upgrading and modernizing deprecated code for calendar functionalities.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Encrypting S1.0', description: 'A final cryptography project implementing encryption techniques covered in the course.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Encryption Puzzle Solver', description: 'Solved various encryption challenges to deepen understanding of cryptographic techniques.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Encrypting S1.0', description: '', image: sift, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Cryptography Puzzles', description: '', image: encryption, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'YOLO Object Detection', description: '', image: yolo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Emotion Detection', description: '', image: emotion, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Movie Chatbots', description: '', image: movieChat, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
