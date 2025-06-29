@@ -13,6 +13,12 @@ import personalWebGIF from '../assets/gifs/personal_web.gif';
 import snakeGIF from '../assets/gifs/snake.gif';
 import flipbookGIF from '../assets/gifs/flip_book.gif';
 import ProjectDisplay from "../layouts/ProjectDisplay"
+import TriePic from "../assets/images/trie.png"
+import trivia from "../assets/images/trivia.png"
+import bookstore from "../assets/images/bookstore.png"
+import tictactoe from "../assets/images/tictactoe.png"
+import weather from "../assets/images/weather&news.png"
+import thomasjeff from "../assets/images/thomasjeff.png"
 
 const Projects = () => {
   const allProjects = [
@@ -129,12 +135,13 @@ const Projects = () => {
     { title: 'Bubble Shooter', description: '', image: bubblePic, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Snake Game', description: '', image: snakeGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Flip Book', description: '', image: flipbookGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Trie Implementation', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Trie Implementation', description: '', image: TriePic, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: "Conway's Game of Life", description: '', image: conwayGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Thomas Jefferson School Website', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Weather & News App (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Tic Tac Toe Game (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Book List (Countdown)', description: 'The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project. The description that describes this project.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Thomas Jefferson School Website', description: '', image: thomasjeff, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Weather & News App ', description: '', image: weather, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Tic Tac Toe Game ', description: '', image: tictactoe, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Book Store', description: '', image: bookstore, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Trivia Generator', description: '', image: trivia, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
   ];
 
   const featuredProjects = allProjects.filter(project => project.featured);
