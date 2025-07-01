@@ -24,6 +24,11 @@ import yolo from "../assets/images/yolo.png"
 import movieChat from "../assets/images/movieChat.png"
 import sift from "../assets/images/sift.png"
 import encryption from "../assets/images/encryption.png"
+import plana from "../assets/images/plana.png"
+import minesweeper from "../assets/images/minesweeper.png"
+import shop from "../assets/images/shop.png"
+import cityWeather from "../assets/images/weather.png"
+import website from "../assets/images/website.png"
 
 const Projects = () => {
   const allProjects = [
@@ -126,22 +131,22 @@ const Projects = () => {
     
 
     // All Projects
-    { title: 'Personal Profile', description: '', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Personal Webpage', description: '', image: personalWebGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'MineSweeper Game', description: '', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Shopping List App', description: '', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Weather App', description: 'A mobile app demonstrating use of APIs and HTTP requests to fetch and display weather information.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Calendar App', description: 'Focuses on upgrading and modernizing deprecated code for calendar functionalities.', image: underConstruction, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Henok\'s Website', description: '', image: website, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Henok\'s page', description: '', image: personalWebGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'MineSweeper', description: '', image: minesweeper, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Shopoholic', description: '', image: shop, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Weather App', description: 'A mobile app demonstrating use of APIs and HTTP requests to fetch and display weather information.', image: cityWeather, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Plana', description: 'Focuses on upgrading and modernizing deprecated code for calendar functionalities.', image: plana, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Encrypting S1.0', description: '', image: sift, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Cryptography Puzzles', description: '', image: encryption, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'YOLO Object Detection', description: '', image: yolo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Emotion Detection', description: '', image: emotion, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Movie Chatbots', description: '', image: movieChat, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Emotion Detection', description: '', image: emotion, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
+    { title: 'Movie Chatbots', description: '', image: movieChat, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
     { title: 'Bubble Shooter', description: '', image: bubblePic, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Snake Game', description: '', image: snakeGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Flip Book', description: '', image: flipbookGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: 'Snake Game', description: '', image: snakeGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
+    { title: 'Flip Book', description: '', image: flipbookGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
     { title: 'Trie Implementation', description: '', image: TriePic, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: "Conway's Game of Life", description: '', image: conwayGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    { title: "Conway's Game of Life", description: '', image: conwayGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
     { title: 'Thomas Jefferson School Website', description: '', image: thomasjeff, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Weather & News App ', description: '', image: weather, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Tic Tac Toe Game ', description: '', image: tictactoe, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },

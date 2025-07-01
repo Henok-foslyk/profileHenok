@@ -1,6 +1,16 @@
 import React from 'react';
 import { Card, CardContent, Typography, CardMedia, Button, Box } from '@mui/material';
 import TechSlider from './TechSlider'
+import { keyframes } from '@emotion/react';
+
+const slideY = keyframes`
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+`;
 
 
 const ProjectCard = ({ 
@@ -9,7 +19,8 @@ const ProjectCard = ({
   image, 
   techStack = [], 
   liveDemoLink, 
-  repoLink 
+  repoLink,
+  animateImage = true
 }) => {
   return (
     <Card
@@ -26,12 +37,28 @@ const ProjectCard = ({
     >
       {image && (
         <CardMedia
-          component="img"
-          height="180"
-          image={image}
-          alt={`${title} screenshot`}
-          sx={{ objectFit: 'cover' }}
-        />
+          component="div"
+          sx={{
+            height: 180,
+            overflow: 'hidden',
+            position: 'relative',
+          }}
+        >
+          <Box
+            component="img"
+            src={image}
+            alt={`${title} screenshot`}
+            sx={{
+              width: '100%',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              ...(animateImage && {
+                animation: `${slideY} 10s ease-in-out infinite alternate`,
+              }),
+            }}
+          />
+        </CardMedia>
       )}
 
       <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
