@@ -51,56 +51,57 @@ const Projects = () => {
     },
     {
       title: 'ReciME',
-      description: 'This Edamam Recipe Web App is a full-stack application that helps users discover and manage recipes. It integrates the Edamam Recipe API for official content and leverages Firebase Firestore for user-generated content. Users can search, filter, and save recipes, interact through comments and ratings, and even chat with a built-in assistant for help. Designed with modular pages including a dashboard, admin panel, and recipe creation interface, the app emphasizes usability and scalability. Developed in React with a Node/Express backend, it demonstrates best practices in API integration, real-time databases, and user interaction flows.',
+      description: 'ReciME is a full-stack recipe web application that allows users to explore, create, and manage recipes with features like commenting, rating, and assistant interaction. It integrates the Edamam Recipe API for external content and Firebase Firestore for real-time, user-generated data. The platform includes an admin panel for moderation, user authentication via Firebase, and a chatbot assistant for helping users during recipe creation. Designed with modular pages and responsive UI, ReciME prioritizes usability and scalability while following best practices in API consumption, database structuring, and interactive web design.',
       image: reciMe,
       techStack: [
-        'React', 
-        'Node.js', 
-        'Express.js', 
-        'Firebase Firestore', 
-        'Firebase Authentication', 
-        'Edamam Recipe API', 
-        'CSS', 
-        'Chatbot Integration', 
+        'React',
+        'Node.js',
+        'Express.js',
+        'Firebase Firestore',
+        'Firebase Authentication',
+        'Edamam API',
+        'CSS',
+        'Chatbot Integration',
         'Figma (UI Design)'
       ],
-      liveDemoLink: '',
-      repoLink: '',
+      liveDemoLink: '', 
+      repoLink: 'https://github.com/Henok-foslyk/Recipe-Project',
       featured: true,
       skills: [
-        'Full-stack development using React and Express.js',
-        'API integration with Edamam for recipe data',
-        'Database design and CRUD operations with Firebase Firestore',
-        'Commenting and rating systems with moderation and sorting',
-        'Chatbot development for recipe assistance',
-        'Admin workflows for content approval and publishing',
-        'Authentication and role-based access control',
-        'Responsive design and interactive user interface',
-        'Image upload (optional stretch goal)',
-        'Social sharing and user following (optional stretch goal)'
+        'Built a full-stack React + Express.js application',
+        'Integrated third-party API (Edamam) for real-time recipe search and nutrition info',
+        'Structured Firestore database for user recipes, comments, and ratings',
+        'Developed role-based user authentication and authorization with Firebase',
+        'Implemented recipe assistant chatbot using keyword matching logic',
+        'Created modular frontend pages: Dashboard, Recipe View, Admin Panel',
+        'Used Figma for UI design and planning',
+        'Handled responsive styling for mobile and desktop views'
       ]
     },
     {
       title: 'News Copilot',
-      description: 'A machine learning project developed after studying ML fundamentals at Cornell. The goal was to build a model that quickly and accurately categorizes news articles by analyzing their headlines and descriptions—enhancing user experience by reducing information overload. Using a Kaggle BBC news dataset, we explored text characteristics, built a logistic regression baseline, experimented with multiple classifiers, and performed hyperparameter optimization for improved accuracy.',
+      description: 'News Copilot is a machine learning project developed as part of the Break Through Tech AI program. The goal was to build a robust model that categorizes news articles based on their headlines and descriptions to help reduce information overload for users. Using a labeled BBC News dataset from Kaggle, we conducted exploratory text analysis, built a logistic regression baseline, and compared it with Naive Bayes, KNN, and Random Forest classifiers. The final pipeline included text preprocessing, feature engineering, and hyperparameter optimization. This project was presented to and reviewed by a Microsoft AI Lead.',
       image: newsPic,
       techStack: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter Notebook'],
-      liveDemoLink: '',
-      repoLink: '',
+      liveDemoLink: '', 
+      repoLink: 'https://github.com/Henok-foslyk/news-copilot',
       featured: true,
       skills: [
-        "Supervised learning for text classification",
-        "Model evaluation and hyperparameter tuning",
-        "Experimentation with logistic regression, Naive Bayes, Random Forest, and KNN"
+        'Supervised learning for multi-class text classification',
+        'Exploratory data analysis on text-based datasets',
+        'Built feature pipelines using TF-IDF vectorization and count-based encodings',
+        'Trained and evaluated multiple classifiers: Logistic Regression, Naive Bayes, KNN, Random Forest',
+        'Performed hyperparameter tuning using GridSearchCV',
+        'Presented findings and model evaluation to a Microsoft AI Lead as part of Break Through Tech AI'
       ]
-    },
+    },    
     {
       title: 'Spotivibe',
       description: 'As part of a simulated internship at Spotify, we built a full-stack social music web application using React, Express, and Firebase. The app leverages the Spotify API to let users view their top songs and artists, customize their music profiles, discover other users, engage in forums, and exchange private messages. Designed to increase user engagement beyond listening, our platform transforms Spotify into a social experience. All API and database interactions are routed through an Express backend for security and scalability. Our team also implemented authentication via Spotify OAuth and prioritized responsive, professional UI/UX throughout development.',
       image: spotivibe,
       techStack: ['React', 'Express', 'Node.js', 'Firebase', 'Spotify API', 'OAuth 2.0', 'JavaScript'],
       liveDemoLink: '',
-      repoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/Spotify-Project.git',
       featured: true,
       skills: [
         "Full-stack development with React and Express",
@@ -113,20 +114,30 @@ const Projects = () => {
     },    
     {
       title: 'Help Me Study Extension',
-      description: 'HelpMeStudy is a lightweight browser extension designed to promote responsible digital habits among students by tracking web activity and providing intentional, customizable reminders. Built during a design sprint focused on fostering responsibility, the tool evolved from a pop-up quiz idea into a productivity-focused extension with user-centered features. It unobtrusively encourages users to realign their browsing behavior with academic goals, using gentle nudges and time-based notifications. Our iterative development emphasized empathy-driven design, usability testing, and responsiveness to user feedback—making the final product both practical and impactful.',
+      description: 'HelpMeStudy is a productivity-focused Chrome browser extension engineered to promote responsible digital habits among students. Built using JavaScript and the Chrome Extension API, the extension tracks tab usage and domain activity, triggering time-based reminders and notifications that nudge users toward academic tasks. Originally conceptualized during a design sprint, the project evolved from a pop-up quiz prototype into a context-aware assistant focused on digital well-being. The tool incorporates logic for session monitoring, user-defined thresholds, and intelligent interruption handling—backed by iterative prototyping, Figma mockups, and user testing with real feedback cycles.',
       image: helpMeStudyPic,
-      techStack: ['JavaScript', 'Chrome Extension APIs', 'HTML', 'CSS', 'Figma (Prototyping)', 'User Testing Tools'],
-      liveDemoLink: '',
-      repoLink: '',
+      techStack: [
+        'JavaScript',
+        'Chrome Extension APIs',
+        'HTML',
+        'CSS',
+        'Figma (Prototyping)',
+        'User Testing Tools'
+      ],
+      liveDemoLink: '', // Optional if hosted on Chrome Web Store in future
+      repoLink: 'https://github.com/Henok-foslyk/Help_Me_Study',
       featured: true,
       skills: [
-        "User-centered design and empathy mapping",
-        "Browser extension development with Chrome APIs",
-        "Iterative prototyping and usability testing",
-        "Behavioral nudges for digital well-being",
-        "Notification systems and time-tracking logic"
+        'Built Chrome extension with persistent background scripts and content scripts',
+        'Tracked browser tab activity and analyzed domain usage patterns in real-time',
+        'Implemented notification logic based on customizable focus intervals',
+        'Developed logic for intelligent behavior-based reminders and nudges',
+        'Designed wireframes and flows using Figma',
+        'Conducted usability testing and refined UX based on feedback',
+        'Worked within Chrome’s permission and sandbox model for secure extension behavior'
       ]
-    },
+    }
+    ,
     
     
 
