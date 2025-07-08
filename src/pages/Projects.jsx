@@ -35,18 +35,18 @@ const Projects = () => {
     // Featured Projects
     {
       title: 'ArtScript',
-      description: 'ArtScript is a custom-designed programming language that enables users—especially beginners and aspiring artists—to create geometric art using simple, intuitive commands. Built around core concepts such as drawing with a virtual pen, using coordinates, and repeating patterns, ArtScript allows users to generate lines, circles, rectangles, and complex polygons with precision. The language emphasizes accessibility, creativity, and mathematical elegance, making it an engaging educational tool for learning programming fundamentals through visual expression. Inspired by geometric artwork from the Williams College Museum of Art, ArtScript merges computational logic with artistic freedom.',
+      description: 'Designed and implemented a domain-specific language (DSL) in F# using functional programming principles and custom parser combinators to support commands for procedural drawing (e.g., lines, shapes, loops). The language enables users—especially children and beginner programmers—to express logic visually by drawing geometric art. Inspired by geometric artwork from the Williams College Museum of Art, ArtScript emphasizes mathematical elegance, accessibility, and creativity.',
       image: bunnyPic,
-      techStack: ['F#', '.NET', 'SVG', 'Parser Combinators'],
-      liveDemoLink: 'https://your-artscript-demo-link.com',
+      techStack: ['F#', '.NET', 'SVG', 'Parser Combinators', 'Graphviz'],
+      liveDemoLink: '',
       repoLink: 'https://github.com/Henok-foslyk/ArtScript_complete',
       featured: true,
       skills: [
-        'Designed and parsed a custom language syntax',
-        'Built and traversed an abstract syntax tree (AST)',
-        'Implemented drawing logic based on geometric commands',
-        'Applied functional programming concepts in F#',
-        'Handled SVG output generation programmatically'
+        'Designed and parsed a custom language syntax using parser combinators',
+        'Built a multi-stage interpreter pipeline: lexing, parsing, AST creation, and recursive evaluation',
+        'Implemented geometry-based logic for drawing lines, circles, rectangles, and polygons',
+        'Developed colorized SVG output for real-time visual feedback',
+        'Integrated Graphviz for intermediate visualization of AST and program flow'
       ]
     },
     {

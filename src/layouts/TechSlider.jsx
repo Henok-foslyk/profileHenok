@@ -1,9 +1,12 @@
 // components/TechSlider.jsx
-import { Box, Stack, Typography, Avatar } from '@mui/material';
+import { Box, Stack, Typography, Avatar, useTheme } from '@mui/material';
 import techIcons from './TechIcons';
-import techs from '../assets/logos/tech.png'
+import techs from '../assets/logos/tech.png';
 
 const TechSlider = ({ stack }) => {
+  const theme = useTheme();
+  const isDarkMode = theme.palette.mode === 'dark';
+
   return (
     <Box
       sx={{
@@ -15,7 +18,9 @@ const TechSlider = ({ stack }) => {
     >
       <Stack direction="row" spacing={2}>
         {stack.map((tech, index) => {
-          const item = techIcons[tech.toLowerCase().replace(/[^a-z0-9]/gi, '')];
+          const key = tech.toLowerCase().replace(/[^a-z0-9]/gi, '');
+          const item = techIcons[key];
+
           return (
             <Box
               key={index}
@@ -25,11 +30,11 @@ const TechSlider = ({ stack }) => {
                 gap: 1,
                 px: 2,
                 py: 1,
-                bgcolor: '#f5f5f5',
+                bgcolor: isDarkMode ? 'grey.800' : '#f5f5f5',
                 borderRadius: 2,
                 boxShadow: 1,
                 minWidth: 'fit-content',
-                maxWidth: 300,      
+                maxWidth: 300,
               }}
             >
               <Avatar
@@ -37,7 +42,11 @@ const TechSlider = ({ stack }) => {
                 alt={item?.name}
                 sx={{ width: 24, height: 24 }}
               />
-              <Typography variant="body2" fontWeight={500}>
+              <Typography
+                variant="body2"
+                fontWeight={500}
+                color={isDarkMode ? 'grey.100' : 'text.primary'}
+              >
                 {item?.name || tech}
               </Typography>
             </Box>

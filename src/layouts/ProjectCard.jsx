@@ -1,6 +1,14 @@
 import React from 'react';
-import { Card, CardContent, Typography, CardMedia, Button, Box } from '@mui/material';
-import TechSlider from './TechSlider'
+import {
+  Card,
+  CardContent,
+  Typography,
+  CardMedia,
+  Button,
+  Box,
+  useTheme,
+} from '@mui/material';
+import TechSlider from './TechSlider';
 import { keyframes } from '@emotion/react';
 
 const slideY = keyframes`
@@ -12,26 +20,29 @@ const slideY = keyframes`
   }
 `;
 
-
-const ProjectCard = ({ 
-  title, 
-  description, 
-  image, 
-  techStack = [], 
-  liveDemoLink, 
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  techStack = [],
+  liveDemoLink,
   repoLink,
-  animateImage = true
+  animateImage = true,
 }) => {
+  const theme = useTheme();
+  const isDarkMode = theme.palette.mode === 'dark';
+
   return (
     <Card
       sx={{
         width: 320,
-        height: 480, // fixed height for equal cards
+        height: 480,
         display: 'flex',
         flexDirection: 'column',
         boxShadow: 3,
         borderRadius: 2,
         mb: 2,
+        bgcolor: isDarkMode ? 'grey.900' : '#fff',
         '&:hover': { boxShadow: 6 },
       }}
     >
@@ -62,7 +73,11 @@ const ProjectCard = ({
       )}
 
       <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-        <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', mb: 1 }}>
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{ fontWeight: 'bold', mb: 1 }}
+        >
           {title}
         </Typography>
 
@@ -76,17 +91,15 @@ const ProjectCard = ({
             WebkitBoxOrient: 'vertical',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
-            flexGrow: 1, // take remaining space so buttons stay at bottom
+            flexGrow: 1,
           }}
         >
           {description}
         </Typography>
-        
-        {/* Tech Stack */}
+
         <TechSlider stack={techStack} />
 
-        {/* Links */}
-        <Box sx={{ display: 'flex', gap: 2 }}>
+        <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
           {liveDemoLink && (
             <Button
               href={liveDemoLink}
@@ -94,7 +107,14 @@ const ProjectCard = ({
               rel="noopener noreferrer"
               variant="contained"
               size="small"
-              color="primary"
+              sx={{
+                bgcolor: isDarkMode ? 'primary.light' : 'primary.main',
+                color: isDarkMode ? 'grey.900' : '#fff',
+                fontWeight: 600,
+                '&:hover': {
+                  bgcolor: isDarkMode ? 'primary.main' : 'primary.dark',
+                },
+              }}
             >
               Live Demo
             </Button>
@@ -107,7 +127,15 @@ const ProjectCard = ({
               rel="noopener noreferrer"
               variant="outlined"
               size="small"
-              color="primary"
+              sx={{
+                borderColor: isDarkMode ? 'primary.light' : 'primary.main',
+                color: isDarkMode ? 'primary.light' : 'primary.main',
+                fontWeight: 600,
+                '&:hover': {
+                  borderColor: isDarkMode ? 'primary.main' : 'primary.dark',
+                  backgroundColor: isDarkMode ? 'grey.800' : 'grey.100',
+                },
+              }}
             >
               GitHub Repo
             </Button>
