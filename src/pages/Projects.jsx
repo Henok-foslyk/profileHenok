@@ -142,9 +142,57 @@ const Projects = () => {
     
 
     // All Projects
-    { title: 'Henok\'s Website', description: '', image: website, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Henok\'s page', description: '', image: personalWebGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'MineSweeper', description: '', image: minesweeper, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    {
+      title: "Henok's Website",
+      description: "Personal portfolio website built with React and Material UI, featuring a modular, multi-page design that showcases projects, work experience, and campus activities. The site supports light and dark themes with smooth transitions, responsive layouts, and reusable card components to ensure consistency and scalability across pages.",
+      image: website,
+      techStack: ['React', 'Material UI (MUI)', 'JavaScript', 'CSS', 'React Router', 'Responsive Design', 'Theme Switching (Light/Dark)'],
+      liveDemoLink: '', // Add link if deployed
+      repoLink: 'https://github.com/Henok-foslyk/profileHenok.git', // Add repo if public
+      featured: false,
+      skills: [
+        'Developed a 5-page SPA with React Router for smooth navigation',
+        'Implemented light and dark theme toggling using MUI theming and React context',
+        'Built modular, reusable card and display components for consistent UI',
+        'Optimized responsive design for desktop and mobile viewports',
+        'Structured site content to highlight technical projects, internships, and extracurriculars'
+      ]
+    },
+    {
+      title: "Henok's Page",
+      description: "A static personal website built from scratch using HTML and CSS to explore foundational front-end development. Designed as a learning exercise, the site highlights coursework, including Human-Computer Interaction (CS376), and showcases project work through semantic HTML structure, responsive design techniques, and custom styling. It features custom navigation, internal routing with multiple HTML files, dropdown menus, and a project gallery—all without relying on external frameworks. This site helped reinforce core concepts in accessibility, layout design, and semantic markup.",
+      image: personalWebGIF,
+      techStack: ['HTML', 'CSS', 'Vanilla JavaScript', 'Responsive Design', 'GitHub Pages'],      liveDemoLink: '', // Add if hosted on GitHub Pages
+      repoLink: 'https://github.com/Henok-sys/Henok-sys.github.io',
+      featured: false,
+      skills: [
+        'Structured multi-page static site with semantic HTML elements',
+        'Designed responsive layouts and grid-based project sections using CSS Flexbox',
+        'Implemented dropdown navigation menu without external JavaScript libraries',
+        'Organized HCI project portfolio with categorized sections and internal routing',
+        'Practiced accessibility and semantic markup best practices',
+        'Used GitHub Pages for static site deployment'
+      ]
+    },
+    {
+      title: 'MineSweeper',
+      description: 'A fully interactive Android application built with Jetpack Compose and Kotlin, implementing core game mechanics using breadth-first search (BFS) for uncovering adjacent empty cells. The app features customizable board sizes, state-driven UI updates, and multi-mode gameplay including flagging and tapping. Incorporates dynamic rendering with Canvas, image assets for game elements, and background audio playback for immersive experience. Designed with modern mobile development practices, the game supports reactive state management via ViewModel and Compose, and robust user interaction handling through gesture recognition.',
+      image: minesweeper,
+      techStack: ['Kotlin', 'Jetpack Compose', 'Android Studio', 'Canvas API', 'BFS Algorithm', 'MVVM Architecture'],
+      liveDemoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/Android-Studio-Projects/tree/main/MineSweeper',
+      featured: false,
+      skills: [
+        'Mobile development with Jetpack Compose and Kotlin',
+        'State management using ViewModel and Compose',
+        'Canvas-based UI rendering and asset drawing',
+        'Breadth-first search (BFS) for game logic',
+        'Gesture detection and interactive gameplay handling',
+        'MVVM architecture implementation for scalability',
+        'MediaPlayer integration for background music playback',
+        'Dynamic UI layout with adaptive board sizing'
+      ]
+    },
     { title: 'Shopoholic', description: '', image: shop, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Weather App', description: 'A mobile app demonstrating use of APIs and HTTP requests to fetch and display weather information.', image: cityWeather, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Plana', description: 'Focuses on upgrading and modernizing deprecated code for calendar functionalities.', image: plana, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },

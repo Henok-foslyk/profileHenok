@@ -19,6 +19,9 @@ import pandas from '../assets/logos/Pandas.png';
 import react from '../assets/logos/React.png';
 import scikit from '../assets/logos/scikit-learn.png'; 
 import spotify from '../assets/logos/spotify.png';
+import kotlin from '../assets/logos/kotlin.png';
+import compose from '../assets/logos/compose.png';
+import androidstudio from '../assets/logos/androidStudio.png';
 
 // Normalized keys (lowercase, no punctuation or spaces)
 const techIcons = {
@@ -43,6 +46,9 @@ const techIcons = {
   react: { name: 'React', icon: react },
   scikitlearn: { name: 'Scikit-learn', icon: scikit },
   spotifyapi: { name: 'Spotify API', icon: spotify },
+  kotlin: { name: 'Kotlin', icon: kotlin },
+  jetpackcompose: { name: 'Jetpack Compose', icon: compose },
+  androidstudio: { name: 'Android Studio', icon: androidstudio },
 };
 
 export default techIcons;
