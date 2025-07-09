@@ -193,9 +193,57 @@ const Projects = () => {
         'Dynamic UI layout with adaptive board sizing'
       ]
     },
-    { title: 'Shopoholic', description: '', image: shop, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Weather App', description: 'A mobile app demonstrating use of APIs and HTTP requests to fetch and display weather information.', image: cityWeather, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Plana', description: 'Focuses on upgrading and modernizing deprecated code for calendar functionalities.', image: plana, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    {
+      title: 'Shopoholic',
+      description: 'A feature-rich Android shopping list app built using Kotlin and Jetpack Compose. It integrates Firebase for real-time data storage and uses `LazyColumn` to render only visible components, improving performance. The app supports item categorization, price tracking, and summary generation, offering a modern UI with gesture-based interactions and stateful dialogues for editing or adding new items.',
+      image: shop,
+      techStack: ['Kotlin', 'Jetpack Compose', 'Android Studio', 'Firebase', 'LazyColumn', 'MVVM Architecture'],
+      liveDemoLink: '', // Add if published to Play Store or demo
+      repoLink: 'https://github.com/Henok-foslyk/Android-Studio-Projects/tree/main/ShoppingList',
+      featured: false,
+      skills: [
+        'Integrated Firebase to store, retrieve, and update shopping list data in real-time',
+        'Used `LazyColumn` to render visible composables efficiently, improving UI performance',
+        'Implemented MVVM architecture using ViewModel for separation of concerns',
+        'Designed dynamic shopping cards with expand/collapse behavior and interactive checkboxes',
+        'Created modal dialogues for adding and editing items with validation and dropdown categories',
+        'Supported item categorization (e.g., electronics, books) and visual summary insights'
+      ]
+    },
+    {
+      title: 'Weather App',
+      description: 'A weather tracking Android app built with Kotlin and Jetpack Compose. It uses the OpenWeatherMap API to fetch current weather data and city-specific weather images. The app enables users to add, edit, and delete cities from a persistent list, and provides an interactive UI for managing locations with real-time weather queries.',
+      image: cityWeather,
+      techStack: ['Kotlin', 'Jetpack Compose', 'Android Studio', 'OpenWeatherMap API', 'LazyColumn', 'MVVM Architecture'],
+      liveDemoLink: '', // Add if published
+      repoLink: 'https://github.com/Henok-foslyk/Android-Studio-Projects/tree/main/WeatherWiz',
+      featured: false,
+      skills: [
+        'Fetched and parsed real-time weather data using OpenWeatherMap API',
+        'Displayed location-based weather cards with image assets and added date info',
+        'Built modal dialogues to add and edit cities using Jetpack Compose',
+        'Managed UI state with ViewModel and Jetpack Compose’s `rememberSaveable`',
+        'Utilized `LazyColumn` with key-based rendering for city cards',
+        'Supported city-specific weather updates triggered via user interaction'
+      ]
+    },
+    {
+      title: 'Plana',
+      description: 'A modern weekly planner and calendar Android app using Kotlin, Jetpack Compose, and an external calendar library. It supports Google authentication and integrates calendar event scheduling and note-taking features. Users can interact with a weekly view, select dates, view tasks, and take notes, all backed by MVVM architecture and reactive state management.',
+      image: plana,
+      techStack: ['Kotlin', 'Jetpack Compose', 'Android Studio', 'SelectableWeekCalendar', 'MVVM Architecture', 'Google Authentication'],
+      liveDemoLink: '', // Add if published
+      repoLink: 'https://github.com/Henok-foslyk/Plana.git',
+      featured: false,
+      skills: [
+        'Integrated external calendar library for a scrollable weekly planner view',
+        'Implemented Gmail authentication for user login and session handling',
+        'Used ViewModel for state management and reactive UI rendering',
+        'Displayed calendar events using a dynamic `SelectableWeekCalendar` with custom day content',
+        'Enabled task viewing, event sorting, and interactive date selection',
+        'Built note-taking interface with stylized input and state persistence'
+      ]
+    },
     { title: 'Encrypting S1.0', description: '', image: sift, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Cryptography Puzzles', description: '', image: encryption, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'YOLO Object Detection', description: '', image: yolo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
