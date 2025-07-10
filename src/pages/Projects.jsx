@@ -268,7 +268,16 @@ const Projects = () => {
       repoLink: 'https://github.com/Henok-foslyk/Cryptography-Implementations.git',
       featured: false
     },
-    { title: 'YOLO Object Detection', description: '', image: yolo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    {
+      title: 'YOLO Object Detection Demo',
+      description: 'Conducted an in-class demonstration of YOLO (You Only Look Once) object detection system using the COCO dataset. Activated the model to recognize people and various objects in real-time classroom settings. Delivered a presentation explaining the internal workings of YOLO, including its architecture, bounding box prediction, and real-time detection capabilities. The project highlights practical applications of deep learning for object detection.',
+      image: yolo, // add the appropriate imported image variable
+      techStack: ['Python', 'Deep Learning', 'Computer Vision', 'YOLO', 'COCO Dataset'],
+      skills: ['Real-time Object Detection', 'Model Deployment', 'Deep Learning Explanation'],
+      liveDemoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/YOLO.git',
+      featured: false
+    },
     { title: 'Emotion Detection', description: '', image: emotion, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
     { title: 'Movie Chatbots', description: '', image: movieChat, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
     {
