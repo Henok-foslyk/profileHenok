@@ -244,8 +244,30 @@ const Projects = () => {
         'Built note-taking interface with stylized input and state persistence'
       ]
     },
-    { title: 'Encrypting S1.0', description: '', image: sift, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Cryptography Puzzles', description: '', image: encryption, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
+    {
+      title: 'Encrypting S1.0',
+      description: 'Implemented the SiFT v1.0 protocol, a secure Simple File Transfer protocol that extends the previous v0.5 version with advanced security features. This includes session key establishment using RSA key-pair generation, cryptographic message transfer with replay protection, and a suite of seven file commands (pwd, lst, chd, mkd, del, upl, dnl) to manage remote file operations securely over TCP/IP. Modified key files (login.py, mtp.py, server.py, client.py) to integrate cryptographic protocols following the SiFT v1.0 specification, ensuring confidentiality, integrity, and authentication on an insecure network.',
+      image: sift,
+      techStack: ['Python', 'Network Security', 'RSA Cryptography', 'Symmetric Encryption'],
+      skills: ['Protocol Design', 
+               'Cryptographic Key Management', 
+               'Secure Network Programming'],
+      liveDemoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/SiFT1.0.git',
+      featured: false
+    },
+    {
+      title: 'Cryptography Puzzles',
+      description: 'A repository of cryptography puzzles and exercises designed for Applied Cryptography coursework. Covers concepts and implementations including one-time pads, block encryption modes (CBC), Kerckhoffs’s principle, cryptographic hash functions, MACs, authenticated encryption, replay attack prevention, and RSA-related mathematical problems. Serves as a study resource and coding practice collection.',
+      image: encryption,
+      techStack: ['Python', 'Cryptographic Hashing', 'Message Authentication Codes (MAC)', 'RSA Encryption'],
+      skills: ['Cryptographic Analysis', 
+               'Hash Function Implementation', 
+               'Authentication Mechanisms'],
+      liveDemoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/Cryptography-Implementations.git',
+      featured: false
+    },
     { title: 'YOLO Object Detection', description: '', image: yolo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Emotion Detection', description: '', image: emotion, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
     { title: 'Movie Chatbots', description: '', image: movieChat, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
@@ -334,12 +356,95 @@ const Projects = () => {
         'Applied mathematical reasoning to determine neighbor-based cell fate'
       ]
     },
-    { title: 'Thomas Jefferson School Website', description: '', image: thomasjeff, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Weather & News App ', description: '', image: weather, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Tic Tac Toe Game ', description: '', image: tictactoe, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Book Store', description: '', image: bookstore, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Trivia Generator', description: '', image: trivia, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-  ];
+    {
+      title: 'Thomas Jefferson School Dashboard',
+      description: 'A five-page administrative web application built in a team setting for a fictional client, Thomas Jefferson Elementary. The dashboard digitizes school operations such as class management, student enrollment, grade editing, and event scheduling. Built with React and Firebase, it supports full CRUD operations for students, teachers, classes, and events. The platform includes directories, class pages, a teacher dashboard, and a school calendar. Designed with real-world usability in mind, this project prioritized clean data models, polished UI/UX, and professional team collaboration using GitHub feature-based branching and pull requests.',
+      image: thomasjeff,
+      techStack: ['React', 'Firebase', 'JavaScript', 'HTML', 'CSS', 'React Router', 'GitHub Flow', 'Firestore'],
+      liveDemoLink: '', // Add if deployed
+      repoLink: 'https://github.com/Henok-foslyk/Thomas-Jefferson-Elementary-School-Dashboard',
+      featured: false,
+      skills: [
+        'Built a multi-page dashboard using React Router for modular navigation',
+        'Implemented full Create, Read, Update, and Delete (CRUD) operations with Firebase Firestore',
+        'Created dedicated pages for student and teacher directories, class dashboards, and event calendars',
+        'Enabled grade editing, roster assignment, and live updates across all pages',
+        'Integrated a school-wide event calendar for real-time scheduling',
+        'Designed intuitive admin workflows with clear navigation and consistent UI',
+        'Used GitHub Flow with feature-based branching and pull requests for team collaboration',
+        'Structured Firestore database to efficiently manage users, roles, and relationships between classes and people'
+      ]
+    },
+    {
+      title: 'Weather & News App',
+      description: 'A responsive web application that combines real-time weather data with current news headlines. Built using React, the app allows users to search for weather by city name, address, or zip code, leveraging the OpenWeatherMap Geocoding and OneCall APIs. It displays current conditions, a 24-hour hourly forecast, and a 7-day outlook, all enhanced with official OpenWeather weather icons. Additionally, it fetches and displays the latest news stories from the New York Times API, showing article titles, authors, images, summaries, and external links. Designed with a user-friendly layout and styled using Material UI, the app also includes a dark/light mode toggle for personalized viewing.',
+      image: weather, // Replace with your image import
+      techStack: ['React', 'JavaScript', 'HTML', 'CSS', 'Material UI', 'OpenWeatherMap API', 'New York Times API',],
+      liveDemoLink: '', // Add if deployed
+      repoLink: 'https://github.com/Henok-foslyk/Forge_Countdown_3/tree/main/WeatherAndNewsApp',
+      featured: false,
+      skills: [
+        'Integrated OpenWeatherMap APIs for geocoding and detailed weather forecasts',
+        'Fetched and rendered top 5 news stories using the New York Times API',
+        'Used React components to modularize weather and news display logic',
+        'Implemented dynamic rendering of weather icons based on forecast data',
+        'Styled UI using Material UI with responsive grids and typography',
+        'Added light mode/dark mode toggle using React state and MUI theme customization',
+        'Handled multiple user input formats (address, city, zip) with fallback error handling'
+      ]
+    },
+    {
+      title: 'Tic Tac Toe Game',
+      description: 'An interactive web-based Tic Tac Toe game developed by following the official React tutorial. This project reinforces key concepts such as state management, component design, event handling, and conditional rendering. Beyond the base tutorial, custom features were added, including a board rewrite using loops, highlighted winning squares, a draw message, and personalized styling through enhanced CSS. The game allows users to navigate move history, track positions, and toggle the order of moves for a more intuitive experience.',
+      image: tictactoe,
+      techStack: ['React', 'JavaScript', 'HTML', 'CSS'],
+      liveDemoLink: '', // Add if hosted online
+      repoLink: 'https://github.com/Henok-foslyk/TicTacToe.git',
+      featured: false,
+      skills: [
+        'Followed the official React tutorial to build an interactive game board',
+        'Used React hooks and component state to manage game flow and player turns',
+        'Refactored board rendering using nested loops for scalability',
+        'Added feature to highlight winning squares visually',
+        'Displayed (col, row) move coordinates in the history panel',
+        'Enabled sorting of move history in ascending or descending order',
+        'Styled interface with custom fonts, colors, layout, and spacing for improved UX'
+      ]
+    },
+    {
+      title: 'Book Store',
+      description: 'A genre-based bookstore web application built using React and Vite. Users can select between fiction, non-fiction, and children’s categories to browse curated book lists with details including title, author, and price. Built as a mini-project to reinforce foundational React concepts like state management, props, conditional rendering, and event handling. A dynamic “Add to Basket” feature allows users to build a shopping cart in real time, with live updates to the basket section for an interactive and responsive user experience.',
+      image: bookstore,
+      techStack: ['React', 'JavaScript', 'HTML', 'CSS','Vite',],
+      liveDemoLink: '', // Add if deployed
+      repoLink: 'https://github.com/Henok-foslyk/Forge_Countdown_2/tree/main/bookstore-app',
+      featured: false,
+      skills: [
+        'Used React state and useState hook to manage genre selection and basket content',
+        'Created reusable components for genre buttons, book cards, and shopping basket',
+        'Implemented conditional rendering to toggle book displays by genre',
+        'Mapped over static dataset to dynamically display book lists',
+        'Organized project using Vite setup with clean component-based architecture'
+      ]
+    },    
+    {
+      title: 'Trivia Generator',
+      description: 'A React-based quiz application that fetches trivia questions from The Trivia API. Users are presented with a series of multiple-choice questions, where the correct answer is randomized among incorrect options to prevent pattern recognition. Upon selecting an answer, users receive instant visual feedback indicating whether they were correct. The project uses Material UI components to enhance visual consistency and provide accessible UI interactions, all while practicing real-world API integration and state management in React.',
+      image: trivia,
+      techStack: ['React', 'JavaScript', 'Material UI', 'The Trivia API', 'HTML', 'CSS'],
+      liveDemoLink: '', // Add if deployed
+      repoLink: 'https://github.com/Henok-foslyk/Forge_Countdown_2/tree/main/trivia-app',
+      featured: false,
+      skills: [
+        'Fetched and randomized trivia questions from The Trivia API',
+        'Displayed multiple-choice questions with answers shuffled dynamically',
+        'Provided immediate visual feedback (correct/incorrect) upon answer selection',
+        'Used Material UI for consistent and accessible button and card design',
+        'Handled asynchronous data loading and managed state using React hooks',
+        'Implemented a clean, responsive layout for an interactive quiz experience'
+      ]
+    }
+     ];
 
   const featuredProjects = allProjects.filter(project => project.featured);
   const otherProjects = allProjects.filter(project => !project.featured);
