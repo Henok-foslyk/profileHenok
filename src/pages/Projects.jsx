@@ -249,11 +249,91 @@ const Projects = () => {
     { title: 'YOLO Object Detection', description: '', image: yolo, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Emotion Detection', description: '', image: emotion, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
     { title: 'Movie Chatbots', description: '', image: movieChat, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
-    { title: 'Bubble Shooter', description: '', image: bubblePic, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: 'Snake Game', description: '', image: snakeGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
-    { title: 'Flip Book', description: '', image: flipbookGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
-    { title: 'Trie Implementation', description: '', image: TriePic, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
-    { title: "Conway's Game of Life", description: '', image: conwayGIF, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
+    {
+      title: 'Bubble Shooter',
+      description: 'A dynamic 3D Java game featuring a bubble-shooting protagonist facing off against intelligent adversaries. Enemies adapt their behavior—chasing the player and dodging attacks as their health depletes. The game includes combat mechanics, evasion logic, and a "pet" system that grants extra lives.',
+      image: bubblePic,
+      techStack: ['Java', '2D Graphics', 'Custom Game Engine', 'Collision Detection', 'OOP'],
+      liveDemoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/Bubble-Shooter-Game',
+      featured: false,
+      skills: [
+        'Implemented behavior for enemies including pursuit',
+        'Developed shooting mechanics with cooldowns and health tracking',
+        'Created a pet life system for extra lives and defensive strategies',
+        'Used bounding box collision detection for projectile and player interactions',
+        'Designed a responsive and engaging gameplay loop with visual effects'
+      ]
+    },
+    {
+      title: 'Snake Game',
+      description: 'A classic pixel-based Snake game built in Java with collision detection, increasing difficulty, and a self-collision death mechanic. The snake grows as it consumes food and dies when it runs into itself or the boundaries.',
+      image: snakeGIF,
+      techStack: ['Java', 'Object-Oriented Design', 'Event Listeners', 'Pixel-Based Movement'],
+      liveDemoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/SnakeGame',
+      featured: false,
+      animateImage: false,
+      skills: [
+        'Developed grid-based movement system with incremental speed increase',
+        'Implemented food consumption and tail growth mechanics',
+        'Handled game-over scenarios via self-collision and wall contact detection',
+        'Designed intuitive controls for real-time player movement',
+        'Built a modular structure to support future game extensions'
+      ]
+    },
+    {
+      title: 'Flip Book',
+      description: 'A drawing and animation app implemented in Java using nested data structures. Users can draw with points and lines across multiple pages and auto-play their drawings in sequence like an animation.',
+      image: flipbookGIF,
+      techStack: ['Java', 'Nested Arrays', 'Event Handling', 'Animation Logic'],
+      liveDemoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/FlipBook',
+      featured: false,
+      animateImage: false,
+      skills: [
+        'Built a custom drawing tool using nested arrays to represent points, lines, and pages',
+        'Enabled multi-page sketching with intuitive controls',
+        'Implemented a playback feature to animate drawings frame by frame',
+        'Managed state persistence across drawing sessions',
+        'Used layered rendering to support complex user interactions',
+        'Organized data structures for efficient lookup and storage of strokes'
+      ]
+    },
+    {
+      title: 'Trie Implementation',
+      description: 'A visual and interactive Java implementation of a Trie data structure. Users can add, delete, and query words through a REPL-style interface, with the Trie visually updating in real time.',
+      image: TriePic,
+      techStack: ['Java', 'Trie Data Structure', 'Interactive Console (REPL)', 'Custom Visualization'],
+      liveDemoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/Trie',
+      featured: false,
+      skills: [
+        'Implemented a Trie with insert, delete, and search operations',
+        'Developed a REPL interface for live word manipulation',
+        'Visualized the Trie structure dynamically as it updates',
+        'Handled edge cases like prefix conflicts and redundant inserts',
+        'Designed a recursive rendering system to display hierarchical data',
+        'Used object-oriented principles to model Trie nodes and relationships'
+      ]
+    },
+    {
+      title: "Conway's Game of Life",
+      description: 'A simulation of Conway\'s Game of Life in Java, visualizing cellular automata with real-time rule application. Users can toggle cells, step through iterations, and observe emergent behavior.',
+      image: conwayGIF,
+      techStack: ['Java', , '2D Grid Simulation', 'Game Loop', 'Mathematical Modeling'],
+      liveDemoLink: '',
+      repoLink: 'https://github.com/Henok-foslyk/Conways-Game-of-Life',
+      featured: false,
+      animateImage: false,
+      skills: [
+        'Simulated cellular automata based on four core rules of Conway\'s Game of Life',
+        'Implemented toggling and state transitions of live and dead cells',
+        'Built an interactive interface for user input and pattern creation',
+        'Created a step-through and auto-run mode for simulation control',
+        'Applied mathematical reasoning to determine neighbor-based cell fate'
+      ]
+    },
     { title: 'Thomas Jefferson School Website', description: '', image: thomasjeff, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Weather & News App ', description: '', image: weather, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },
     { title: 'Tic Tac Toe Game ', description: '', image: tictactoe, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false },

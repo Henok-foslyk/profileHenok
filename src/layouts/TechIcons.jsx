@@ -22,11 +22,13 @@ import spotify from '../assets/logos/spotify.png';
 import kotlin from '../assets/logos/kotlin.png';
 import compose from '../assets/logos/compose.png';
 import androidstudio from '../assets/logos/androidStudio.png';
+import java from '../assets/logos/Java.png';
 
 // Normalized keys (lowercase, no punctuation or spaces)
 const techIcons = {
   python: { name: 'Python', icon: python },
   javascript: { name: 'JavaScript', icon: javascript },
+  java: { name: 'Java', icon: java },
   net: { name: '.NET', icon: net },
   chatbotintegration: { name: 'Chatbot Integration', icon: chat },
   chromeextensionapis: { name: 'Chrome Extension APIs', icon: chrome },
