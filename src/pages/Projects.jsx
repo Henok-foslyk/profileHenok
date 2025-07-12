@@ -278,8 +278,56 @@ const Projects = () => {
       repoLink: 'https://github.com/Henok-foslyk/YOLO.git',
       featured: false
     },
-    { title: 'Emotion Detection', description: '', image: emotion, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
-    { title: 'Movie Chatbots', description: '', image: movieChat, techStack: ['TECH-STACK-HERE'], liveDemoLink: '', repoLink: '', featured: false, animateImage: false },
+    {
+      title: "Movie Suggestions Bot",
+      description: "A conversational movie‑recommendation chatbot written in Python. Users type up to five liked or disliked films, the bot classifies each sentiment (rule‑based + logistic‑regression models) and then suggests new titles via item‑based collaborative filtering. Features disambiguation for ambiguous titles, typo‑tolerant spell‑checking, multi‑movie sentence parsing, and an interactive REPL with greeting/clarification logic.",
+      image: movieChat,          // keep the same imported image variable
+      techStack: [
+        "Python",
+        "NumPy",
+        "scikit‑learn",
+        "NLTK",
+        "Logistic Regression",
+        "Collaborative Filtering",
+        "Regular Expressions"
+      ],
+      liveDemoLink: "",          // add later if you deploy
+      repoLink: "https://github.com/Henok-foslyk/Movie-Suggestions-Bot",
+      featured: false,
+      skills: [
+        "Natural‑language sentiment analysis (rule‑based & statistical)",
+        "Title disambiguation and spell‑checking",
+        "Collaborative filtering for personalized recs",
+        "State‑driven dialog management",
+        "Regex‑driven entity extraction",
+        "Command‑line REPL design"
+      ]
+    },
+    {
+      title: "Emotion Detection",
+      description: "A comparative study and implementation of multi‑label emotion‑classification models that tag Anger, Fear, Joy, Sadness, and Surprise at the sentence level. Evaluates Binary Relevance, Classifier Chains, a simple neural network, and transformer models (DeBERTa, DistilBERT). DeBERTa achieved the highest micro‑F1 on the SemEval‑2025 Task 11 dataset; translation experiments on Amharic revealed cross‑lingual performance gaps.",
+      image: emotion,
+      techStack: [
+        "Python",
+        "scikit‑learn",
+        "NumPy",
+        "PyTorch",
+        "Matplotlib",
+        "Hugging Face Transformers (DeBERTa, DistilBERT)",
+        "Google Translate API",
+      ],
+      liveDemoLink: "",
+      repoLink: "https://github.com/Henok-foslyk/Emotion-Detection",
+      featured: false,
+      skills: [
+        "Multi‑label text classification",
+        "Transformer fine‑tuning & hyper‑parameter search",
+        "Binary Relevance and Classifier Chains baselines",
+        "Dataset imbalance handling & evaluation (micro‑/macro‑F1)",
+        "Cross‑lingual experimentation (Amharic → English)",
+        "Research‑paper writing & result visualization"
+      ]
+    },
     {
       title: 'Bubble Shooter',
       description: 'A dynamic 3D Java game featuring a bubble-shooting protagonist facing off against intelligent adversaries. Enemies adapt their behavior—chasing the player and dodging attacks as their health depletes. The game includes combat mechanics, evasion logic, and a "pet" system that grants extra lives.',
