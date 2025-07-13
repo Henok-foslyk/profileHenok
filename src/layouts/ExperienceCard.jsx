@@ -13,7 +13,7 @@ const ExperienceCard = ({ title, company, logo, duration, place, responsibilitie
         '&:hover': { boxShadow: 6 },
       }}
     >
-      {/* Header: Logo, Job Title, Company Name, Duration & Place */}
+      {/* Header: Title, Logo, Duration & Place */}
       <CardContent
         sx={{
           display: 'flex',
@@ -22,26 +22,21 @@ const ExperienceCard = ({ title, company, logo, duration, place, responsibilitie
           p: 2,
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          {/* Logo */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+          <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
+            {title}
+          </Typography>
+          {/* Company Logo underneath the title */}
           {logo && (
             <CardMedia
               component="img"
-              sx={{ width: 50, height: 50, objectFit: 'contain', mr: 2 }}
+              sx={{ width: 100, height: 100, objectFit: 'contain', mt: -3 }}
               image={logo}
               alt={`${company} logo`}
             />
           )}
-          {/* Job Title and Company */}
-          <div>
-            <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
-              {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {company}
-            </Typography>
-          </div>
         </div>
+
         {/* Duration and Place */}
         <Typography variant="body2" color="text.secondary">
           {duration} • {place}

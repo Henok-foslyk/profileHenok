@@ -1,6 +1,12 @@
 import React from 'react';
 import ExperienceCard from '../layouts/ExperienceCard';
 import flaskLogo from '../assets/images/flask.png';
+import microsoft from '../assets/logos/microsoft.png'
+import williams from '../assets/logos/williams.png';
+import clia from '../assets/logos/clia.png'
+import klear from '../assets/logos/klearlogo.png'
+import ensco from '../assets/logos/enscologo.png'
+import worldcare from '../assets/logos/worldcare.png'
 
 const Experiences = () => {
   return (
@@ -17,7 +23,7 @@ const Experiences = () => {
           <ExperienceCard 
             title="TO FILL"
             company=""
-            logo={flaskLogo}
+            logo={ensco}
             duration=""
             place=""
             responsibilities={[]}
@@ -28,7 +34,7 @@ const Experiences = () => {
           <ExperienceCard 
             title="TO FILL"
             company=""
-            logo={flaskLogo}
+            logo={worldcare}
             duration=""
             place=""
             responsibilities={[]}
@@ -40,7 +46,7 @@ const Experiences = () => {
           <ExperienceCard 
             title="Software Engineer Intern"
             company="Klear Inc."
-            logo={flaskLogo}
+            logo={klear}
             duration="May 2024 – August 2024"
             place="San Francisco, CA - Remote"
             responsibilities={[
@@ -55,7 +61,7 @@ const Experiences = () => {
           <ExperienceCard 
             title="AI Studio Fellow"
             company="Microsoft"
-            logo={flaskLogo}
+            logo={microsoft}
             duration="August 2024 – December 2024"
             place="Cambridge, MA - Hybrid"
             responsibilities={[
@@ -69,7 +75,7 @@ const Experiences = () => {
           <ExperienceCard 
             title="Software Engineer and Research Assistant"
             company="Williams Robotics Lab"
-            logo={flaskLogo}
+            logo={williams}
             duration="May 2024 – August 2024"
             place="Williamstown, MA"
             responsibilities={[
@@ -83,7 +89,7 @@ const Experiences = () => {
           <ExperienceCard 
             title="Backend Developer"
             company="Center for Learning in Action, Williams College"
-            logo={flaskLogo}
+            logo={clia}
             duration="April 2024 – August 2024"
             place="Williamstown, MA"
             responsibilities={[
@@ -97,7 +103,7 @@ const Experiences = () => {
           <ExperienceCard 
             title="Content Tutor"
             company="Williams College Peer Tutoring Center"
-            logo={flaskLogo}
+            logo={williams}
             duration="May 2024 – Present"
             place="Williamstown, MA"
             responsibilities={[
@@ -111,7 +117,7 @@ const Experiences = () => {
           <ExperienceCard 
             title="Teaching Assistant"
             company="Williams College CS Department"
-            logo={flaskLogo}
+            logo={williams}
             duration="May 2023 – Present"
             place="Williamstown, MA"
             responsibilities={[
@@ -125,7 +131,7 @@ const Experiences = () => {
           <ExperienceCard 
             title="Causal Inference Research Assistant"
             company="Williams College CS Department"
-            logo={flaskLogo}
+            logo={williams}
             duration="May 2023 – May 2024"
             place="Williamstown, MA"
             responsibilities={[
