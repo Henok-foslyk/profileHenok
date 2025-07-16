@@ -50,9 +50,9 @@ const Experiences = () => {
             duration="May 2024 – August 2024"
             place="San Francisco, CA - Remote"
             responsibilities={[
-              "Reduced page load times by 75% by programming and integrating a front-end architecture for a Python Flask backend.",
-              "Developed a scalable prototype integrating Allianz's insurance API, used by 200+ clients for high-cost transactions.",
-              "Delivered a complete API prototype 1 week ahead of schedule with a team of 4 SWE interns."
+              "Engineered a full-stack insurance integration prototype using Python Flask (back end) and Jinja2 (front end), enabling Allianz’s API services within Klear Inc.’s flagship financial platform for 200+ enterprise clients",
+              "Implemented asynchronous job polling and token-based authentication using threading and timed refresh strategies to manage secure, long-lived API sessions",
+              "Optimized front-end performance by 25% by restructuring Flask route handling, minimizing redundant API calls, and leveraging lightweight JSON payloads for dynamic template rendering"
             ]}
           />
         </div>
