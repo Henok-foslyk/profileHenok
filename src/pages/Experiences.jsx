@@ -1,6 +1,5 @@
 import React from 'react';
 import ExperienceCard from '../layouts/ExperienceCard';
-import flaskLogo from '../assets/images/flask.png';
 import microsoft from '../assets/logos/microsoft.png'
 import williams from '../assets/logos/williams.png';
 import clia from '../assets/logos/clia.png'
@@ -21,8 +20,8 @@ const Experiences = () => {
         {/* Placeholder TO FILL Cards */}
         <div className="w-full max-w-[700px]">
           <ExperienceCard 
-            title="TO FILL"
-            company=""
+            title="Algorithm Engineering Intern"
+            company="ENSCO Rail"
             logo={ensco}
             duration=""
             place=""
@@ -32,8 +31,8 @@ const Experiences = () => {
 
         <div className="w-full max-w-[700px]">
           <ExperienceCard 
-            title="TO FILL"
-            company=""
+            title="Data Science Intern"
+            company="WorldCare"
             logo={worldcare}
             duration=""
             place=""
@@ -79,9 +78,17 @@ const Experiences = () => {
             duration="May 2024 – August 2024"
             place="Williamstown, MA"
             responsibilities={[
-              "Developed backend features for Conversation, a user-friendly 3D modeling tool.",
-              "Integrated line/arc offset copying and division points as new modeling features."
+              "Engineered core backend components of Conversation, a 3D modeling application designed for classroom use, later deployed in a classroom setting",
+              "Implemented geometric drawing rules in C++, applying vector mathematics and 3D coordinate transformations to support interactive sketching features",
+              {
+                text: "Contributed 300+ lines of code to an established codebase via Git, including:",
+                subpoints: [
+                  "Offset Copy Tool - Enabled duplication of lines/arcs by a specified vector offset",
+                  "Division Point Tool - Added equidistant division points on lines and arcs"
+                ]
+              }
             ]}
+            
           />
         </div>
 

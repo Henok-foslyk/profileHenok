@@ -47,13 +47,35 @@ const ExperienceCard = ({ title, company, logo, duration, place, responsibilitie
       <CardContent sx={{ pt: 0, pb: 2 }}>
         <Grid container direction="column" spacing={1}>
           <ul style={{ paddingLeft: '1.5rem', margin: 0 }}>
-            {responsibilities.map((responsibility, index) => (
-              <li key={index} style={{ marginBottom: '0.5rem' }}>
-                <Typography variant="body2" component="span" color="text.primary">
-                  {responsibility}
-                </Typography>
-              </li>
-            ))}
+            {responsibilities.map((responsibility, index) => {
+              if (typeof responsibility === 'string') {
+                return (
+                  <li key={index} style={{ marginBottom: '0.5rem' }}>
+                    <Typography variant="body2" component="span" color="text.primary">
+                      {responsibility}
+                    </Typography>
+                  </li>
+                );
+              } else if (typeof responsibility === 'object' && responsibility.text) {
+                return (
+                  <li key={index} style={{ marginBottom: '0.5rem' }}>
+                    <Typography variant="body2" component="span" color="text.primary">
+                      {responsibility.text}
+                    </Typography>
+                    <ul style={{ paddingLeft: '1.5rem', marginTop: '0.3rem' }}>
+                      {responsibility.subpoints.map((sub, subIdx) => (
+                        <li key={subIdx}>
+                          <Typography variant="body2" component="span" color="text.primary">
+                            {sub}
+                          </Typography>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                );
+              }
+              return null;
+            })}
           </ul>
         </Grid>
       </CardContent>
