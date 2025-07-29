@@ -10,7 +10,6 @@ const OnCampus = () => {
         <CampusJobCard
           department="Computer Science Department"
           title="Computer Science Teaching Assistant"
-          logo={flaskLogo}
           description="Assisted professors in grading, conducting office hours, and supporting students in CS courses."
           achievements={[
             "Led weekly review sessions for 50+ students.",
@@ -21,7 +20,6 @@ const OnCampus = () => {
         <CampusJobCard
           department="Computer Science Department"
           title="Computer Science Research Assistant"
-          logo={flaskLogo}
           description="Collaborated on research projects focusing on machine learning and data analysis."
           achievements={[
             "Co-authored a research paper published at XYZ Conference.",
@@ -32,7 +30,6 @@ const OnCampus = () => {
         <CampusJobCard
           department="Academic Support Center"
           title="Peer STEM Tutor"
-          logo={flaskLogo}
           description="Provided tutoring in STEM subjects including math, physics, and computer science."
           achievements={[
             "Helped students improve grades by an average of one letter grade.",
@@ -43,7 +40,6 @@ const OnCampus = () => {
         <CampusJobCard
           department="IT Services"
           title="Student Technology Consultant"
-          logo={flaskLogo}
           description="Assisted faculty and students with technology troubleshooting and training."
           achievements={[
             "Streamlined tech onboarding process for new students.",
@@ -54,7 +50,6 @@ const OnCampus = () => {
         <CampusJobCard
           department="Student Organizations"
           title="WEESA Club Vice-President"
-          logo={flaskLogo}
           description="Served as Vice-President of the Williams Ethiopian and Eritrean Student Association."
           achievements={[
             "Organized cultural events attended by over 300 students.",
@@ -65,7 +60,6 @@ const OnCampus = () => {
         <CampusJobCard
           department="Career Services"
           title="Peer Career Advisor"
-          logo={flaskLogo}
           description="Advised students on resumes, interviews, and career planning."
           achievements={[
             "Conducted over 100 one-on-one career advising sessions.",
