@@ -6,7 +6,7 @@ import { ThemeProvider, createTheme, CssBaseline, Container, Box } from '@mui/ma
 
 
 export default function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const theme = createTheme({
     palette: {

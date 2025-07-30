@@ -23,9 +23,13 @@ const Experiences = () => {
             title="Algorithm Engineering Intern"
             company="ENSCO Rail"
             logo={ensco}
-            duration=""
-            place=""
-            responsibilities={[]}
+            duration="May 2025 - August 2025"
+            place="Vienna, VA"
+            responsibilities={[
+              "Developing a proprietary Optical Recognition algorithm in Python for alphanumeric character detection on images captured under adverse conditions, with plans to translate to C++",
+              "Developed a personal labeling tool with a graphical user interface to simplify character box drawing and labeling",
+              "Led the end-to-end development process in an Agile environment—using Jira to manage tasks, from gathering business requirements up until developing the algorithm and testing on ENSCO’s proprietary image dataset"
+            ]}
           />
         </div>
 
@@ -34,9 +38,13 @@ const Experiences = () => {
             title="Data Science Intern"
             company="WorldCare"
             logo={worldcare}
-            duration=""
-            place=""
-            responsibilities={[]}
+            duration="May 2025 - August 2025"
+            place="Boston, MA - Remote"
+            responsibilities={[
+              "Integrated John Snow Labs’ obfuscation and redaction models into WorldCare’s medical data platform to enable secure document sharing for medical second opinions",
+              "Designed and implemented methods for de-identification of Personal Health Information (PHI) and Personally Identifiable Information (PII)",
+              "Designed and implemented a frontend for nurses to use when accessing the redaction models"
+            ]}
           />
         </div>
 

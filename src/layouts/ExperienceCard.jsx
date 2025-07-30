@@ -30,7 +30,7 @@ const ExperienceCard = ({ title, company, logo, duration, place, responsibilitie
           {logo && (
             <CardMedia
               component="img"
-              sx={{ width: 100, height: 100, objectFit: 'contain', mt: -3 }}
+              sx={{ width: 100, height: 40, objectFit: 'contain', mt: 0 }}
               image={logo}
               alt={`${company} logo`}
             />
