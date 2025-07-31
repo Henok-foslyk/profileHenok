@@ -5,7 +5,7 @@ import campus from '../assets/images/williamsCampus.png';
 import henok from '../assets/images/henok.jpg';
 import projects from '../assets/images/projects.png';
 import contact from '../assets/images/contact.png';
-import experience from '../assets/images/experience.png';
+import experience from '../assets/images/experience.jpg';
 
 const Home = () => {
   return (
@@ -46,6 +46,7 @@ const Home = () => {
             image={experience}
             linkTo="/experiences"
             width={345}
+            height={390}
           />
         </Grid>
 
