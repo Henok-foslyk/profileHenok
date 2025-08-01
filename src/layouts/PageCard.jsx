@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, Typography, CardMedia } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-const DESCRIPTION_HEIGHT = 140; // approximate height of description area in px
+const DESCRIPTION_HEIGHT = 120; // approximate height of description area in px
 
 const PageCard = ({
   title,

@@ -43,10 +43,7 @@ const Footer = () => {
         <Typography variant="caption" color="gray" mt={2}>
           © {new Date().getFullYear()} Henok Misgina Fisseha. All rights reserved.
         </Typography>
-
-        <Typography variant="body2" sx={{ fontStyle: 'italic', color: '#aaa', mt: 1 }}>
-          Why do programmers prefer dark mode? Because light attracts bugs. 🐞
-        </Typography>
+        
       </Stack>
     </Paper>
   );

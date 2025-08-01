@@ -18,13 +18,16 @@ const Home = () => {
       </Typography>
 
       <Grid container spacing={4} justifyContent="center">
+        
+
         <Grid item xs={12} sm={6} md={4}>
           <PageCard
-            title="About Me"
-            description="Learn more about my education background, interests, and experiences."
-            image={henok}
-            linkTo="/about"
+            title="Experiences"
+            description="Find out about my work experiences and internships."
+            image={experience}
+            linkTo="/experiences"
             width={400}
+            height={457}
           />
         </Grid>
 
@@ -41,10 +44,10 @@ const Home = () => {
 
         <Grid item xs={12} sm={6} md={4}>
           <PageCard
-            title="Experiences"
-            description="Find out about my work experiences and internships."
-            image={experience}
-            linkTo="/experiences"
+            title="About Me"
+            description="Learn more about my education background, interests, and experiences."
+            image={henok}
+            linkTo="/about"
             width={345}
             height={390}
           />

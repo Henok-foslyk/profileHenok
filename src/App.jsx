@@ -6,7 +6,7 @@ import { ThemeProvider, createTheme, CssBaseline, Container, Box } from '@mui/ma
 
 
 export default function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const theme = createTheme({
     palette: {
@@ -25,13 +25,18 @@ export default function App() {
           }
         : {
             background: {
-              default: '#ffffff',    // --bg-color light
+              default: '#fdfaf6', // soft cream background
+              paper: '#ffffff',   // for cards/containers
             },
             text: {
-              primary: '#111111',    // --text-color light
+              primary: '#2b2b2b', // deep gray for readability
+              secondary: '#5f6368', // muted gray for less emphasis
             },
             primary: {
-              main: '#29ab87',       // --accent-color light
+              main: '#5fb49c', // a gentle teal accent
+            },
+            secondary: {
+              main: '#ffb26b', // soft orange for highlights
             },
           }),
     },

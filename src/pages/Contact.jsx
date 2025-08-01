@@ -119,8 +119,10 @@ const Contact = () => {
       </Paper>
       <Box sx={{ mt: 4, textAlign: 'center', color: 'text.secondary' }}>
           <Typography variant="h4" fontStyle="italic" color="primary.main">
-            💡 Why do software engineers always mix up Halloween and Christmas?<br />
-            Because Oct 31 == Dec 25.
+            Told my computer I needed a break… 
+          </Typography>
+          <Typography variant="h4" fontStyle="italic" color="primary.main">
+            Now it won’t stop sending me Kit-Kat ads. 🍫
           </Typography>
         </Box>
     </>
