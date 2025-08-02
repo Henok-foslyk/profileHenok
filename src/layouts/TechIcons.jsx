@@ -2,6 +2,10 @@
 
 // Imports
 import python from '../assets/logos/python.png';
+import go from "../assets/logos/Go.png"
+import tensorFlow from "../assets/logos/TensorFlow.png"
+import pyTorch from "../assets/logos/PyTorch.png"
+import cPlusPlus from "../assets/logos/CPlusPlus.png"
 import javascript from '../assets/logos/js.png';
 import net from '../assets/logos/net.png';
 import chat from '../assets/logos/chatbot integration.png';
@@ -51,6 +55,10 @@ const techIcons = {
   kotlin: { name: 'Kotlin', icon: kotlin },
   jetpackcompose: { name: 'Jetpack Compose', icon: compose },
   androidstudio: { name: 'Android Studio', icon: androidstudio },
+  c: {name: 'C++', icon: cPlusPlus},
+  pytorch : {name: 'PyTorch', icon: pyTorch},
+  tensorflow: {name: 'TensorFlow', icon: tensorFlow},
+  golang: {name: 'Golang', icon: go}
 };
 
 export default techIcons;

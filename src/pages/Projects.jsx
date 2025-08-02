@@ -181,7 +181,7 @@ const Projects = () => {
       techStack: ['Kotlin', 'Jetpack Compose', 'Android Studio', 'Canvas API', 'BFS Algorithm', 'MVVM Architecture'],
       liveDemoLink: '',
       repoLink: 'https://github.com/Henok-foslyk/Android-Studio-Projects/tree/main/MineSweeper',
-      featured: false,
+      featured: true,
       skills: [
         'Mobile development with Jetpack Compose and Kotlin',
         'State management using ViewModel and Compose',

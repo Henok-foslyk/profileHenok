@@ -36,7 +36,7 @@ const ProjectCard = ({
     <Card
       sx={{
         width: 320,
-        height: 480,
+        height: 400,
         display: 'flex',
         flexDirection: 'column',
         boxShadow: 3,
@@ -50,7 +50,7 @@ const ProjectCard = ({
         <CardMedia
           component="div"
           sx={{
-            height: 180,
+            height: 300,
             overflow: 'hidden',
             position: 'relative',
           }}
@@ -87,7 +87,7 @@ const ProjectCard = ({
           sx={{
             mb: 2,
             display: '-webkit-box',
-            WebkitLineClamp: 4,
+            WebkitLineClamp: 2,
             WebkitBoxOrient: 'vertical',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
