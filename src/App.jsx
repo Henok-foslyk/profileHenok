@@ -15,6 +15,7 @@ export default function App() {
         ? {
             background: {
               default: '#24272e',    // --bg-color dark
+              paper: '#2f323a',
             },
             text: {
               primary: '#ffffff',    // --text-color dark

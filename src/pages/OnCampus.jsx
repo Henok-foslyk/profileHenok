@@ -7,15 +7,7 @@ const OnCampus = () => {
     <section className="p-8">
       <h2 className="text-3xl font-semibold mb-6">On Campus Positions</h2>
       <div className="flex flex-wrap justify-center gap-6">
-      <CampusJobCard
-          department="NAME OF OFFICE"
-          title="Reunion Ranger"
-          description="DESCRIPTION"
-          achievements={[
-            "work 1.",
-            "work 2."
-          ]}
-        />
+      
         <CampusJobCard
           department="Computer Science Department"
           title="Computer Science Teaching Assistant"
@@ -73,6 +65,16 @@ const OnCampus = () => {
           achievements={[
             "Conducted over 100 one-on-one career advising sessions.",
             "Hosted career workshops with local industry professionals."
+          ]}
+        />
+
+        <CampusJobCard
+          department="Alumni Engagement Office"
+          title="Reunion Ranger"
+          description="DESCRIPTION"
+          achievements={[
+            "work 1.",
+            "work 2."
           ]}
         />
       </div>

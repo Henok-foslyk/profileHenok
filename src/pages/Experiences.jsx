@@ -17,7 +17,7 @@ const Experiences = () => {
       </p>
 
       <div className="flex flex-wrap gap-6 justify-center">
-        {/* Placeholder TO FILL Cards */}
+        
         <div className="w-full max-w-[700px]">
           <ExperienceCard 
             title="Algorithm Engineering Intern"
@@ -35,20 +35,18 @@ const Experiences = () => {
 
         <div className="w-full max-w-[700px]">
           <ExperienceCard 
-            title="Data Science Intern"
-            company="WorldCare"
-            logo={worldcare}
-            duration="May 2025 - August 2025"
-            place="Boston, MA - Remote"
+            title="AI Studio Fellow"
+            company="Microsoft"
+            logo={microsoft}
+            duration="August 2024 – December 2024"
+            place="Cambridge, MA - Hybrid"
             responsibilities={[
-              "Integrated John Snow Labs’ obfuscation and redaction models into WorldCare’s medical data platform to enable secure document sharing for medical second opinions",
-              "Designed and implemented methods for de-identification of Personal Health Information (PHI) and Personally Identifiable Information (PII)",
-              "Designed and implemented a frontend for nurses to use when accessing the redaction models"
+              "Developing News Copilot, an ML model to automate news categorization and reduce manual labeling by 80%.",
+              "Collaborating with a team across 2 universities under the guidance of a Microsoft Principal Director of AI Engineering."
             ]}
           />
         </div>
-
-        {/* Updated/Added Experiences */}
+        
         <div className="w-full max-w-[700px]">
           <ExperienceCard 
             title="Software Engineer Intern"
@@ -66,21 +64,7 @@ const Experiences = () => {
 
         <div className="w-full max-w-[700px]">
           <ExperienceCard 
-            title="AI Studio Fellow"
-            company="Microsoft"
-            logo={microsoft}
-            duration="August 2024 – December 2024"
-            place="Cambridge, MA - Hybrid"
-            responsibilities={[
-              "Developing News Copilot, an ML model to automate news categorization and reduce manual labeling by 80%.",
-              "Collaborating with a team across 2 universities under the guidance of a Microsoft Principal Director of AI Engineering."
-            ]}
-          />
-        </div>
-
-        <div className="w-full max-w-[700px]">
-          <ExperienceCard 
-            title="Software Engineer and Research Assistant"
+            title="Software Engineer Assistant"
             company="Williams Robotics Lab"
             logo={williams}
             duration="May 2024 – August 2024"
@@ -102,58 +86,33 @@ const Experiences = () => {
 
         <div className="w-full max-w-[700px]">
           <ExperienceCard 
+            title="Data Science Intern"
+            company="WorldCare"
+            logo={worldcare}
+            duration="May 2025 - August 2025"
+            place="Boston, MA - Remote"
+            responsibilities={[
+              "Integrated John Snow Labs’ obfuscation and redaction models into WorldCare’s medical data platform to enable secure document sharing for medical second opinions",
+              "Designed and implemented methods for de-identification of Personal Health Information (PHI) and Personally Identifiable Information (PII)",
+              "Designed and implemented a frontend for nurses to use when accessing the redaction models"
+            ]}
+          />
+        </div>
+
+        <div className="w-full max-w-[700px]">
+          <ExperienceCard 
             title="Backend Developer"
             company="Center for Learning in Action, Williams College"
             logo={clia}
             duration="April 2024 – August 2024"
             place="Williamstown, MA"
             responsibilities={[
-              "Built scalable backend architecture in Golang, improving DB query performance by 35%.",
-              "Created a Google Maps-powered ride-matching algorithm for campus transport."
+              "Integrated Google Maps API into a Golang backend for a local ride sharing application"
             ]}
           />
         </div>
 
-        <div className="w-full max-w-[700px]">
-          <ExperienceCard 
-            title="Content Tutor"
-            company="Williams College Peer Tutoring Center"
-            logo={williams}
-            duration="May 2024 – Present"
-            place="Williamstown, MA"
-            responsibilities={[
-              "Tutoring students in data structures, debugging, and core CS concepts.",
-              "Providing direct hands-on support in courses such as CS and Linear Algebra."
-            ]}
-          />
-        </div>
-
-        <div className="w-full max-w-[700px]">
-          <ExperienceCard 
-            title="Teaching Assistant"
-            company="Williams College CS Department"
-            logo={williams}
-            duration="May 2023 – Present"
-            place="Williamstown, MA"
-            responsibilities={[
-              "Assisted 80+ students with Python and Java code debugging and problem-solving.",
-              "Supported learning in foundational CS courses and data structure development."
-            ]}
-          />
-        </div>
-
-        <div className="w-full max-w-[700px]">
-          <ExperienceCard 
-            title="Causal Inference Research Assistant"
-            company="Williams College CS Department"
-            logo={williams}
-            duration="May 2023 – May 2024"
-            place="Williamstown, MA"
-            responsibilities={[
-              "Designed and implemented a Python algorithm to model biological contagion via causal chain graphs."
-            ]}
-          />
-        </div>
+   
       </div>
     </section>
   );
