@@ -9,7 +9,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       elevation={4}
       sx={{
         background: 'linear-gradient(45deg, #6a11cb 30%, #2575fc 90%)',
