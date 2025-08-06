@@ -13,18 +13,19 @@ const OnCampus = () => {
           title="Computer Science Teaching Assistant"
           description="Assisted professors in grading, conducting office hours, and supporting students in CS courses."
           achievements={[
-            "Led weekly review sessions for 50+ students.",
-            "Developed supplementary materials to improve student understanding."
+            "Assist 80+ students in writing efficient code and executing appropriate Python and Java debugging techniques that bolstered their understanding of common data structures and algorithms while enhancing their problem solving skills",
+            "Provide individualized debugging assistance to resolve programming roadblocks and explain the concept behind algorithms"
           ]}
         />
 
         <CampusJobCard
           department="Computer Science Department"
           title="Computer Science Research Assistant"
-          description="Collaborated on research projects focusing on machine learning and data analysis."
+          description="Collaborated on research projects focusing on Causal Inference and Chain Graphs"
           achievements={[
-            "Co-authored a research paper published at XYZ Conference.",
-            "Designed experiments that improved algorithm accuracy by 15%."
+            
+            "Designed and implemented a Python algorithm to emulate biological contagion by applying causal chain graph models",
+            "Literature reviewed several papers on causal inference to understand appropriate steps to go from theory to code implementation",
           ]}
         />
 
