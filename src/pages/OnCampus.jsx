@@ -32,20 +32,20 @@ const OnCampus = () => {
         <CampusJobCard
           department="Academic Support Center"
           title="Peer STEM Tutor"
-          description="Provided tutoring in STEM subjects including math, physics, and computer science."
+          description="Provided tutoring in STEM subjects including Linear Algebra and Data Structures & Algorithms."
           achievements={[
-            "Helped students improve grades by an average of one letter grade.",
-            "Created tutoring guides adopted by the STEM center."
+            "Conducted personalized one-on-one sessions to explain STEM concepts, work through diverse problem sets, and demonstrate applications of data structures and algorithms.",
+            "Taught exam preparation strategies and study techniques that helped students grasp complex material more easily and improve academic confidence."
           ]}
         />
 
         <CampusJobCard
-          department="IT Services"
-          title="Student Technology Consultant"
+          department="Office of Information Technology"
+          title="Student Technology Consultant Manager"
           description="Assisted faculty and students with technology troubleshooting and training."
           achievements={[
-            "Streamlined tech onboarding process for new students.",
-            "Led workshops on software tools and campus resources."
+            "Resolved authentication, device networking, and software deployment issues while coordinating with IT team members to enhance service efficiency.",  
+            "Worked with academic professors to troubleshoot technology setups, ensuring seamless classroom learning experiences."
           ]}
         />
 
@@ -54,8 +54,8 @@ const OnCampus = () => {
           title="WEESA Club Vice-President"
           description="Served as Vice-President of the Williams Ethiopian and Eritrean Student Association."
           achievements={[
-            "Organized cultural events attended by over 300 students.",
-            "Expanded club membership by 40% during tenure."
+            "Organized cultural events to encourage community engagment and teach about various Ethiopian and Eritrean cultures.",
+            "Coordinated with club leadership to ensure the club's vitality and growth."
           ]}
         />
 
@@ -64,8 +64,8 @@ const OnCampus = () => {
           title="Peer Career Advisor"
           description="Advised students on resumes, interviews, and career planning."
           achievements={[
-            "Conducted over 100 one-on-one career advising sessions.",
-            "Hosted career workshops with local industry professionals."
+            "Provided tailored career guidance on resumes, interview techniques, and job search strategies, empowering students to confidently navigate their career paths.",
+            "Facilitated events featuring industry clusters, enhancing students’ networking abilities and bridging the gap between academic experience and professional opportunities."
           ]}
         />
 
@@ -74,8 +74,7 @@ const OnCampus = () => {
           title="Reunion Ranger"
           description="DESCRIPTION"
           achievements={[
-            "work 1.",
-            "work 2."
+            "Assisted Engagement Office during Reunion week by staffing various events to welcome and assist college alumni."
           ]}
         />
       </div>

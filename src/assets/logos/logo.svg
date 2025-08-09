@@ -1,0 +1,19 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+  width="50"
+  height="50"
+  fill="#33ffa8"
+>
+  <text
+    x="50%"
+    y="70%"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="72"
+    font-weight="600"
+    style="font-style: italic; user-select:none;"
+  >
+    H
+  </text>
+</svg>

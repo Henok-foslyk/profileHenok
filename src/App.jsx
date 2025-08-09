@@ -1,12 +1,13 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './layouts/Navbar';
 import Footer from './layouts/Footer';
+import ScrollToTop from './layouts/ScrollToTop'; 
 import { useState, useMemo } from 'react';
 import { ThemeProvider, createTheme, CssBaseline, Container, Box } from '@mui/material';
 
 
 export default function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const theme = createTheme({
     palette: {
@@ -26,7 +27,7 @@ export default function App() {
           }
         : {
             background: {
-              default: '#fdfaf6', // soft cream background
+              default: '#d9e6db', // soft cream background
               paper: '#ffffff',   // for cards/containers
             },
             text: {
@@ -47,6 +48,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <ScrollToTop />
       <Box
         display="flex"
         flexDirection="column"

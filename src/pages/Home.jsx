@@ -19,6 +19,16 @@ const Home = () => {
 
       <Grid container spacing={4} justifyContent="center">
         
+      <Grid item xs={12} sm={6} md={4}>
+          <PageCard
+            title="About Me"
+            description="Learn more about my education background, interests, and experiences."
+            image={henok}
+            linkTo="/about"
+            width={400}
+            height={457}
+          />
+        </Grid>
 
         <Grid item xs={12} sm={6} md={4}>
           <PageCard
@@ -37,21 +47,12 @@ const Home = () => {
             description="Explore my software development projects and contributions."
             image={projects}
             linkTo="/projects"
-            width={400}
-            height={457}
-          />
-        </Grid>
-
-        <Grid item xs={12} sm={6} md={4}>
-          <PageCard
-            title="About Me"
-            description="Learn more about my education background, interests, and experiences."
-            image={henok}
-            linkTo="/about"
             width={345}
             height={390}
           />
         </Grid>
+
+        
 
         <Grid item xs={12} sm={6} md={4}>
           <PageCard
