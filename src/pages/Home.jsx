@@ -19,7 +19,7 @@ const Home = () => {
 
       <Grid container spacing={4} justifyContent="center">
         
-      <Grid item xs={12} sm={6} md={4}>
+      <Grid item xs={12} sm={6} lg={4}>
           <PageCard
             title="About Me"
             description="Learn more about my education background, interests, and experiences."
@@ -56,7 +56,7 @@ const Home = () => {
 
         <Grid item xs={12} sm={6} md={4}>
           <PageCard
-            title="On Campus"
+            title="On-Campus"
             description="Learn about my on-campus activities and involvement at Williams College."
             image={campus}
             linkTo="/oncampus"

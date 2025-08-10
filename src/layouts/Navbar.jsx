@@ -13,7 +13,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <AppBar
-      position="fixed"
+      position="sticky"
       elevation={4}
       sx={{
         background: isDarkMode
@@ -53,7 +53,13 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           }}
         >
           {navLinks.map((path) => {
-            const label = path.replace('/', '').charAt(0).toUpperCase() + path.slice(2);
+            const labelMap = {
+              '/about': 'About',
+              '/projects': 'Projects',
+              '/experiences': 'Experiences',
+              '/oncampus': 'On Campus', // space added here
+              '/contact': 'Contact'
+            };
             return (
               <Button
               key={path}
@@ -74,7 +80,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                 },
               }}
             >
-              {label}
+              {labelMap[path] || path}
             </Button>
 
             );
