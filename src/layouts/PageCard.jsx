@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, Typography, CardMedia } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-const DESCRIPTION_HEIGHT = 120; // approximate height of description area in px
+const DESCRIPTION_HEIGHT = 120; // approx height of description area
 
 const PageCard = ({
   title,
@@ -10,15 +10,17 @@ const PageCard = ({
   image,
   description,
   linkTo,
-  width,
+  width,    // maxWidth prop
   height,
+  sx,       // additional styles if needed
 }) => {
   return (
     <Card
       component={linkTo ? RouterLink : 'div'}
       to={linkTo || undefined}
       sx={{
-        width: width || 345,
+        width: '100%',          // full width of container
+        maxWidth: width || 345, // max width from prop or default
         height: height || 'auto',
         display: 'flex',
         flexDirection: 'column',
@@ -28,11 +30,12 @@ const PageCard = ({
         cursor: linkTo ? 'pointer' : 'default',
         textDecoration: 'none',
         color: 'inherit',
+        overflow: 'hidden',
         '&:hover': {
           boxShadow: 6,
           textDecoration: 'none',
         },
-        overflow: 'hidden',
+        ...sx,
       }}
     >
       {image && (
@@ -44,7 +47,7 @@ const PageCard = ({
             flexGrow: 1,
             objectFit: 'cover',
             width: '100%',
-            height: `calc(100% - ${DESCRIPTION_HEIGHT}px)`, // fill leftover height
+            height: `calc(100% - ${DESCRIPTION_HEIGHT}px)`,
           }}
         />
       )}
