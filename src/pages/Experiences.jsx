@@ -41,8 +41,8 @@ const Experiences = () => {
             duration="August 2024 – December 2024"
             place="Cambridge, MA - Hybrid"
             responsibilities={[
-              "Developing News Copilot, an ML model to automate news categorization and reduce manual labeling by 80%.",
-              "Collaborating with a team across 2 universities under the guidance of a Microsoft Principal Director of AI Engineering."
+              "Developed News Copilot, a machine learning tool that leverages text classification and large language models (LLMs) to categorize news headlines and descriptions into relevant topics",
+              "Collaborated with a team across 2 universities under the guidance of a Microsoft Principal Director of AI Engineering."
             ]}
           />
         </div>
