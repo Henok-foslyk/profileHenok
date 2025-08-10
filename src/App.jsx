@@ -60,9 +60,9 @@ export default function App() {
           component="main"
           sx={{
             flex: 1,
-            py: 4,
+            py: 2,
             maxWidth: 'lg',
-            mt: '80px',
+            mt: '10px',
             // You can add more styling here if you want
           }}
         >
