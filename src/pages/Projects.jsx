@@ -29,6 +29,7 @@ import minesweeper from "../assets/images/minesweeper.png"
 import shop from "../assets/images/shop.png"
 import cityWeather from "../assets/images/weather.png"
 import website from "../assets/images/website.png"
+import aMazeImage from "../assets/images/aMaze.png" 
 
 const Projects = () => {
   const allProjects = [
@@ -79,23 +80,6 @@ const Projects = () => {
       ]
     },
     {
-      title: 'News Copilot',
-      description: 'News Copilot is a machine learning project developed as part of the Break Through Tech AI program. The goal was to build a robust model that categorizes news articles based on their headlines and descriptions to help reduce information overload for users. Using a labeled BBC News dataset from Kaggle, we conducted exploratory text analysis, built a logistic regression baseline, and compared it with Naive Bayes, KNN, and Random Forest classifiers. The final pipeline included text preprocessing, feature engineering, and hyperparameter optimization. This project was presented to and reviewed by a Microsoft AI Lead.',
-      image: newsPic,
-      techStack: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter Notebook'],
-      liveDemoLink: '', 
-      repoLink: 'https://github.com/Henok-foslyk/news-copilot',
-      featured: true,
-      skills: [
-        'Supervised learning for multi-class text classification',
-        'Exploratory data analysis on text-based datasets',
-        'Built feature pipelines using TF-IDF vectorization and count-based encodings',
-        'Trained and evaluated multiple classifiers: Logistic Regression, Naive Bayes, KNN, Random Forest',
-        'Performed hyperparameter tuning using GridSearchCV',
-        'Presented findings and model evaluation to a Microsoft AI Lead as part of Break Through Tech AI'
-      ]
-    },    
-    {
       title: 'Spotivibe',
       description: 'As part of a simulated internship at Spotify, we built a full-stack social music web application using React, Express, and Firebase. The app leverages the Spotify API to let users view their top songs and artists, customize their music profiles, discover other users, engage in forums, and exchange private messages. Designed to increase user engagement beyond listening, our platform transforms Spotify into a social experience. All API and database interactions are routed through an Express backend for security and scalability. Our team also implemented authentication via Spotify OAuth and prioritized responsive, professional UI/UX throughout development.',
       image: spotivibe,
@@ -136,8 +120,31 @@ const Projects = () => {
         'Conducted usability testing and refined UX based on feedback',
         'Worked within Chrome’s permission and sandbox model for secure extension behavior'
       ]
-    }
-    ,
+    },
+
+    {
+      title: "aMaze",
+      description: "A procedural 3D maze generator built in Roblox using Lua. Players choose difficulty levels to generate varying maze sizes, navigate from spawn to goal, and track completion time with a real-time UI timer. Features include dynamic maze creation with recursive backtracking, RemoteEvent-driven gameplay communication, and immersive environment styling with customizable floor materials.",
+      image: aMazeImage,  // keep your imported image variable here
+      techStack: [
+        "Lua",
+        "Procedural Generation",
+        "Recursive Backtracking",
+        "RemoteEvents",
+        "UI Design",
+        "3D Game Development"
+      ],
+      liveDemoLink: "",  // add later if deployed
+      repoLink: "https://github.com/Henok-foslyk/aMaze.git",
+      featured: true,
+      skills: [
+        "Procedural maze algorithms",
+        "Event-driven multiplayer synchronization",
+        "Dynamic UI timer and completion messages",
+        "Environment customization",
+        "Game state management in Roblox"
+      ]
+    },
     
     
 
@@ -268,6 +275,23 @@ const Projects = () => {
       repoLink: 'https://github.com/Henok-foslyk/Cryptography-Implementations.git',
       featured: false
     },
+    {
+      title: 'News Copilot',
+      description: 'News Copilot is a machine learning project developed as part of the Break Through Tech AI program. The goal was to build a robust model that categorizes news articles based on their headlines and descriptions to help reduce information overload for users. Using a labeled BBC News dataset from Kaggle, we conducted exploratory text analysis, built a logistic regression baseline, and compared it with Naive Bayes, KNN, and Random Forest classifiers. The final pipeline included text preprocessing, feature engineering, and hyperparameter optimization. This project was presented to and reviewed by a Microsoft AI Lead.',
+      image: newsPic,
+      techStack: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter Notebook'],
+      liveDemoLink: '', 
+      repoLink: 'https://github.com/Henok-foslyk/news-copilot',
+      featured: false,
+      skills: [
+        'Supervised learning for multi-class text classification',
+        'Exploratory data analysis on text-based datasets',
+        'Built feature pipelines using TF-IDF vectorization and count-based encodings',
+        'Trained and evaluated multiple classifiers: Logistic Regression, Naive Bayes, KNN, Random Forest',
+        'Performed hyperparameter tuning using GridSearchCV',
+        'Presented findings and model evaluation to a Microsoft AI Lead as part of Break Through Tech AI'
+      ]
+    },    
     {
       title: 'YOLO Object Detection Demo',
       description: 'Conducted an in-class demonstration of YOLO (You Only Look Once) object detection system using the COCO dataset. Activated the model to recognize people and various objects in real-time classroom settings. Delivered a presentation explaining the internal workings of YOLO, including its architecture, bounding box prediction, and real-time detection capabilities. The project highlights practical applications of deep learning for object detection.',

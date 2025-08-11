@@ -27,6 +27,7 @@ import kotlin from '../assets/logos/kotlin.png';
 import compose from '../assets/logos/compose.png';
 import androidstudio from '../assets/logos/androidStudio.png';
 import java from '../assets/logos/Java.png';
+import lua from '../assets/logos/lua.png'
 
 // Normalized keys (lowercase, no punctuation or spaces)
 const techIcons = {
@@ -58,7 +59,8 @@ const techIcons = {
   c: {name: 'C++', icon: cPlusPlus},
   pytorch : {name: 'PyTorch', icon: pyTorch},
   tensorflow: {name: 'TensorFlow', icon: tensorFlow},
-  golang: {name: 'Golang', icon: go}
+  golang: {name: 'Golang', icon: go},
+  lua: {name: 'Lua', icon: lua}
 };
 
 export default techIcons;
