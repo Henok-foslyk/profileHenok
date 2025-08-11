@@ -9,7 +9,7 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
-  IconButton
+  IconButton,
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
@@ -35,19 +35,21 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             ? 'linear-gradient(45deg, #1b3b2f 30%, #276749 80%)'
             : 'linear-gradient(45deg, #2e6a57 30%, #4a8c6f 80%)',
           color: isDarkMode ? '#33ffa8' : '#1b4332',
-          px: 4,
+          px: { xs: 1, sm: 2, md: 4 }, // Responsive horizontal padding
           py: 2,
         }}
       >
         <Toolbar
           sx={{
-            justifyContent: 'space-between',
+            display: 'flex',
             flexWrap: 'wrap',
+            alignItems: 'center',
             minHeight: 100,
+            gap: 1,
           }}
         >
-          {/* Logo */}
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          {/* Left: Logo */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, flexShrink: 0 }}>
             <Link to="/">
               <Box
                 component="img"
@@ -58,14 +60,17 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </Link>
           </Box>
 
-          {/* Centered Nav */}
+          {/* Middle: Nav links */}
           <Box
             sx={{
-              display: 'flex',
               flexGrow: 1,
-              justifyContent: 'center',
+              display: 'flex',
+              justifyContent: { xs: 'center', sm: 'center' },
+              flexWrap: 'wrap',
               gap: 1,
-              alignItems: 'center',
+              mt: { xs: 1, sm: 0 },
+              minWidth: 0,
+              width: { xs: '100%', sm: 'auto' },
             }}
           >
             {navLinks.map((path) => {
@@ -88,8 +93,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                     fontWeight: 700,
                     fontSize: '1.15rem',
                     letterSpacing: '0.05em',
-                    transition: 'background-color 0.3s ease, transform 0.15s ease',
                     cursor: 'pointer',
+                    whiteSpace: 'nowrap',
                     '&:hover': {
                       backgroundColor: 'rgba(255,255,255,0.25)',
                       transform: 'scale(1.05)',
@@ -102,8 +107,26 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             })}
           </Box>
 
-          {/* Right buttons */}
-          <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
+          {/* Right: Resume buttons + Dark Mode */}
+          <Box
+            sx={{
+              display: 'flex',
+              gap: 1,
+              alignItems: 'center',
+              flexShrink: 0,
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              mt: { xs: 1, sm: 0 },
+              minWidth: 0,
+              width: { xs: '100%', sm: 'auto' },
+
+              // Stack vertically on very small screens
+              flexDirection: { xs: 'column', sm: 'row' },
+              '& > *': {
+                width: { xs: '100%', sm: 'auto' },
+              },
+            }}
+          >
             <Button
               variant="outlined"
               color="inherit"
@@ -133,13 +156,19 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               }
               label={isDarkMode ? 'Dark Mode' : 'Light Mode'}
               labelPlacement="start"
-              sx={{ color: 'inherit', userSelect: 'none' }}
+              sx={{
+                color: 'inherit',
+                userSelect: 'none',
+                width: { xs: '100%', sm: 'auto' },
+                justifyContent: { xs: 'flex-start', sm: 'center' },
+                ml: 0,
+              }}
             />
           </Box>
         </Toolbar>
       </AppBar>
 
-      {/* Minimal Resume Dialog */}
+      {/* Resume Preview Dialog */}
       <Dialog
         open={openResume}
         onClose={() => setOpenResume(false)}
@@ -155,10 +184,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           }}
         >
           Resume Preview
-          <IconButton onClick={() => setOpenResume(false)}>
+          <IconButton onClick={() => setOpenResume(false)} aria-label="close">
             <CloseIcon />
           </IconButton>
         </DialogTitle>
+
         <DialogContent sx={{ height: '80vh', p: 0 }}>
           <embed
             src={resumePDF}
