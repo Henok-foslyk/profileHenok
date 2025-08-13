@@ -34,7 +34,7 @@ import TechSlider from '../layouts/TechSlider'
 const certifications = [
   { title: 'CodePath Advanced Algorithms Training', logo: codepathLogo },
   { title: 'Breakthrough Tech AI Foundations', logo: breakthroughLogo },
-  { title: 'AWS Cloud (in progress)', logo: awsLogo },
+  { title: 'AWS Cloud Practitioner', logo: awsLogo },
   { title: 'Forge Software Engineering Launch', logo: forgeLogo },
   { title: 'Aquincium Institute of Technology', logo: studyAwayLogo },
   { title: 'Microsoft Azure (in progress)', logo: azureLogo },
