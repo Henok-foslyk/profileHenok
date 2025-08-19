@@ -72,7 +72,7 @@ const OnCampus = () => {
         <CampusJobCard
           department="Alumni Engagement Office"
           title="Reunion Ranger"
-          description="DESCRIPTION"
+          description="Supported staff during Reunion week "
           achievements={[
             "Assisted Engagement Office during Reunion week by staffing various events to welcome and assist college alumni."
           ]}
